@@ -3,6 +3,8 @@ name: Deploy docs to GitHub Pages
 on:
   push:
     branches:
+      - main
+      - master
       - ChrisEdits
   workflow_dispatch:
 
@@ -33,7 +35,7 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: SITE_BASE_PATH=/misty-docs npm run build
+        run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
