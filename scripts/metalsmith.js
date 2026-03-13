@@ -42,22 +42,21 @@ var javascriptDocsPreprocess = require('./javascript_docs_preprocess');
 var git = require('git-rev');
 var path = require('path');
 
-
 var handlebars = require('handlebars');
 var prettify = require('prettify');
 prettify.register(handlebars);
 
-//disable autolinking
+// disable autolinking
 function noop() {}
 noop.exec = noop;
 var marked = require('marked');
 marked.InlineLexer.rules.gfm.url = noop;
 
 var environment;
-
 var gitBranch;
-
 var generateSearch = process.env.SEARCH_INDEX !== '0';
+var siteBasePath = process.env.SITE_BASE_PATH || '';
+var assetPath = siteBasePath ? siteBasePath + '/assets' : '/assets';
 
 // Make Particle.function searchable with function only
 lunr_.tokenizer.separator = /[\s\-.]+/;
@@ -67,7 +66,8 @@ exports.metalsmith = function() {
     if (token.length > 0) {
       return token;
     }
-  };
+  }
+
   var metalsmith = Metalsmith(__dirname)
     .concurrency(100)
     .source('../src')
@@ -78,7 +78,7 @@ exports.metalsmith = function() {
       pattern: '**/less/style.less',
       useDynamicSourceMap: true
     }))
-    // Don't copy the styless partials to the build folder
+    // Don't copy the styles partials to the build folder
     // Add other patterns of files that should not be copied
     .use(ignore([
       '**/less/*.less',
@@ -102,7 +102,7 @@ exports.metalsmith = function() {
             src: '../api-service-libraries/',
             config: '../api-node/',
             includeFilters: ['.*Controller\\.js$']
-          },
+          }
         ]
       })
     )
@@ -111,7 +111,7 @@ exports.metalsmith = function() {
       destFile: 'content/reference/javascript.md',
       srcFile: '../particle-api-js/docs/api.md',
       fragment: 'GENERATED_JAVASCRIPT_DOCS',
-      preprocess: javascriptDocsPreprocess,
+      preprocess: javascriptDocsPreprocess
     }))
     // Make all files in this directory available to any Handlebar template
     // Use partials like this: {{> arrows}}
@@ -120,13 +120,20 @@ exports.metalsmith = function() {
     }))
     // Add properties to files that match the pattern
     .use(fileMetadata([
-      {pattern: 'content/**/*.md', metadata: {lunr: generateSearch, assets: '/assets', branch: gitBranch}}
+      {
+        pattern: 'content/**/*.md',
+        metadata: {
+          lunr: generateSearch,
+          assets: assetPath,
+          branch: gitBranch
+        }
+      }
     ]))
     .use(msIf(
       environment === 'development',
       fileMetadata([
-        {pattern: 'content/**/*.md', metadata: {development: true}},
-        {pattern: '**/*.hbs', metadata: {development: true}}
+        { pattern: 'content/**/*.md', metadata: { development: true } },
+        { pattern: '**/*.hbs', metadata: { development: true } }
       ])
     ))
     // Handlebar templates for use in the front-end JS code
@@ -134,8 +141,8 @@ exports.metalsmith = function() {
       directory: '../templates/precompile',
       dest: 'assets/js/precompiled.js',
       knownHelpers: {
-        'each': true,
-        'if': true
+        each: true,
+        if: true
       }
     }))
     // Move files like contents/reference/firmware.md to reference/firmware.md
@@ -158,7 +165,7 @@ exports.metalsmith = function() {
         orderDynamicCollections: [
           'robot',
           'coding-misty',
-          'reference',
+          'reference'
         ]
       },
       misty_ii: {
@@ -167,7 +174,7 @@ exports.metalsmith = function() {
         orderDynamicCollections: [
           'robot',
           'coding-misty',
-          'reference',
+          'reference'
         ]
       },
       tools_and_apps: {
@@ -181,7 +188,7 @@ exports.metalsmith = function() {
         ]
       }
     }))
-    //end of collections/sections
+    // end of collections/sections
     // Fix previous / next links when a page doesn't exist for a specific device
     .use(fixLinks({
       key: 'devices'
@@ -192,9 +199,9 @@ exports.metalsmith = function() {
     .use(deviceFeatureFlags({
       config: '../config/device_features.json'
     }))
-	// Create HTML pages with meta http-equiv='refresh' redirects
+    // Create HTML pages with meta http-equiv='refresh' redirects
     .use(redirects({
-        config: '../config/redirects.json'
+      config: '../config/redirects.json'
     }))
     // Replace the {{handlebar}} markers inside Markdown files before they are rendered into HTML and
     // any other files with a .hbs extension in the src folder
@@ -202,16 +209,16 @@ exports.metalsmith = function() {
       engine: 'handlebars',
       pattern: ['**/*.md', '**/*.hbs']
     }))
-	// Remove the .hbs extension from generated files that contained handlebar markers
+    // Remove the .hbs extension from generated files that contained handlebar markers
     .use(copy({
-        pattern: '**/*.hbs',
-        transform: function removeLastExtension(file) {
-			return path.join(path.dirname(file), path.basename(file, path.extname(file)));
-		},
-        move: true
+      pattern: '**/*.hbs',
+      transform: function removeLastExtension(file) {
+        return path.join(path.dirname(file), path.basename(file, path.extname(file)));
+      },
+      move: true
     }))
-	// THIS IS IT!
-	// Render the main docs files into HTML
+    // THIS IS IT!
+    // Render the main docs files into HTML
     .use(markdown())
     // Add a toc key for each file based on the HTML header elements in the file
     .use(autotoc({
@@ -223,11 +230,11 @@ exports.metalsmith = function() {
     .use(lunr({
       indexPath: 'search-index.json',
       fields: {
-          contents: 1,
-          title: 10
+        contents: 1,
+        title: 10
       },
       pipelineFunctions: [
-          removeEmptyTokens
+        removeEmptyTokens
       ]
     }))
     // For files that have a template frontmatter key, look for that template file in the configured directory and
@@ -258,7 +265,7 @@ exports.compress = function(callback) {
 };
 
 exports.build = function(callback) {
-  git.branch(function (str) {
+  git.branch(function(str) {
     gitBranch = process.env.TRAVIS_BRANCH || str;
     exports.metalsmith()
       .use(compress({
@@ -278,7 +285,7 @@ exports.build = function(callback) {
 
 exports.test = function(callback) {
   var server = serve({ cache: 300, port: 8081 });
-  git.branch(function (str) {
+  git.branch(function(str) {
     gitBranch = process.env.TRAVIS_BRANCH || str;
     generateSearch = true;
     exports.metalsmith()
@@ -297,7 +304,7 @@ exports.test = function(callback) {
 
 exports.server = function(callback) {
   environment = 'development';
-  git.branch(function (str) {
+  git.branch(function(str) {
     gitBranch = process.env.TRAVIS_BRANCH || str;
     exports.metalsmith().use(serve())
       .use(watch({
@@ -310,8 +317,8 @@ exports.server = function(callback) {
           '../templates/layouts/support.hbs': 'content/support/**/*.md',
           '../templates/layouts/suppMenu.hbs': 'content/support/**/*.md',
           '../templates/partials/**/*.hbs': 'content/**/*.md',
-          '${source}/assets/js/*.js*' : true,
-          '${source}/assets/images/**/*' : true,
+          '${source}/assets/js/*.js*': true,
+          '${source}/assets/images/**/*': true,
           '../config/device_features.json': 'content/**/*.md',
           '../api-node/lib/**/*.js': 'content/reference/api.md',
           '../config/redirects.json': '**/*'
