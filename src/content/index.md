@@ -7,6 +7,12 @@ order: 1
 
 <h1>Docs Home</h1>
 
+<div class="boxed warningBox">
+  <p>
+    <strong>Note:</strong> You are viewing an older version of the Misty documentation. Some information here is still useful, but parts of these docs may be outdated and may not reflect the latest intended version. The latest version of the documentation will be published here shortly.
+  </p>
+</div>
+
 When you write code for Misty, you can quickly build skills that make use of the unique characteristics of an autonomous, roaming robot with personality.
 
 What’s a skill? A skill is code you write to make Misty do something. When you write a skill, you:
