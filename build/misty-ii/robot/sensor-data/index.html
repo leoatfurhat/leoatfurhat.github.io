@@ -1,0 +1,2123 @@
+<!doctype html>
+<html class="one-columns">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta content="Misty" property="og:title">
+    <meta content="Documentation for Misty Robot." name="description">
+    <title>Misty Docs | Event Types</title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/less/prism.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="/assets/images/misty_favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/css/bootstrapiso.min.css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css" media="all"/>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="docs" data-level>
+        <div class="docs-header">
+            <div class="right">
+                <div class="search">
+                    <div class="search-input-wrapper">
+                        <i class="ion-search"></i>
+                        <input class="search-box" type="text" placeholder="Search" value=""/>
+                    </div>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-root">
+            <div class="menubar">
+                <ul class="nav guide-menu">
+<li data-level="1" class="guide-section">
+<h3 class="guide-section-titles">Robot</h3>
+<ul type="1">
+<li class="top-level " data-level="1.1">
+<a href="/misty-ii/robot/misty-ii/">Misty II Overview</a>
+</li>
+<li class="top-level " data-level="1.2">
+<a href="/misty-ii/robot/introduction-to-skills/">Introduction to Skills</a>
+</li>
+<li class="top-level " data-level="1.3">
+<a href="/misty-ii/robot/hardware-extensibility/">Hardware Extensibility</a>
+</li>
+<li class="top-level " data-level="1.4">
+<a href="/misty-ii/robot/misty-backpack-for-arduino/">Misty Backpack for Arduino</a>
+</li>
+<li class="top-level active" data-level="1.5">
+<a href="/misty-ii/robot/sensor-data/">Event Types</a>
+</li>
+<li class="top-level " data-level="1.6">
+<a href="/misty-ii/robot/patches/">Patches</a>
+</li>
+<li class="top-level " data-level="1.7">
+<a href="/misty-ii/robot/system-updates/">System Updates</a>
+</li>
+<li class="top-level " data-level="1.8">
+<a href="/misty-ii/robot/troubleshooting-misty-studio-connection/">Troubleshooting Misty Connectivity</a>
+</li>
+</ul>
+</li>
+<li data-level="2" class="guide-section">
+<h3 class="guide-section-titles">Misty Studio</h3>
+<ul type="1">
+<li class="top-level " data-level="2.1">
+<a href="/misty-ii/misty-studio/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="2.2">
+<a href="/misty-ii/misty-studio/basics/">The Basics</a>
+</li>
+<li class="top-level " data-level="2.3">
+<a href="/misty-ii/misty-studio/mapping/">Mapping & Navigation</a>
+</li>
+</ul>
+</li>
+<li data-level="3" class="guide-section">
+<h3 class="guide-section-titles">Blockly</h3>
+<ul type="1">
+<li class="top-level " data-level="3.1">
+<a href="/misty-ii/blockly/overview/">Blockly Overview</a>
+</li>
+</ul>
+</li>
+<li data-level="4" class="guide-section">
+<h3 class="guide-section-titles">Python</h3>
+<ul type="1">
+<li class="top-level " data-level="4.1">
+<a href="/misty-ii/python/overview/">Python Overview</a>
+</li>
+<li class="top-level " data-level="4.2">
+<a href="/misty-ii/python/python-detailed/">Python in Detail</a>
+</li>
+</ul>
+</li>
+<li data-level="5" class="guide-section">
+<h3 class="guide-section-titles">Web API</h3>
+<ul type="1">
+<li class="top-level " data-level="5.1">
+<a href="/misty-ii/web-api/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="5.2">
+<a href="/misty-ii/web-api/api-reference/">API Reference</a>
+</li>
+<li class="top-level " data-level="5.3">
+<a href="/misty-ii/web-api/tutorials/">Tutorials</a>
+</li>
+</ul>
+</li>
+<li data-level="6" class="guide-section">
+<h3 class="guide-section-titles">.NET SDK</h3>
+<ul type="1">
+<li class="top-level " data-level="6.1">
+<a href="/misty-ii/dotnet-sdk/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="6.2">
+<a href="/misty-ii/dotnet-sdk/getting-started/">Getting Started</a>
+</li>
+<li class="top-level " data-level="6.3">
+<a href="/misty-ii/dotnet-sdk/sample-project/">IntroSkills Sample Project</a>
+</li>
+<li class="top-level " data-level="6.4">
+<a href="/misty-ii/dotnet-sdk/dotnet-skill-architecture/">.NET Skill Architecture</a>
+</li>
+</ul>
+</li>
+<li data-level="7" class="guide-section">
+<h3 class="guide-section-titles">Interaction System</h3>
+<ul type="1">
+<li class="top-level " data-level="7.1">
+<a href="/misty-ii/interaction-system/overview/">Interaction System</a>
+</li>
+</ul>
+</li>
+<li data-level="8" class="guide-section">
+<h3 class="guide-section-titles">Mobile App</h3>
+<ul type="1">
+<li class="top-level " data-level="8.1">
+<a href="/misty-connect/">Misty Connect</a>
+</li>
+</ul>
+</li>
+</ul>
+            </div>
+            <div class="page-body">
+                <div class="content-inner">
+                    <div class="content">
+                        <div class="content">
+<h1 id="event-types">Event Types<a class="header-permalinks" href="#event-types"><i class="ion-link"></i></a></h1><p>This document provides information about Misty's available event types. Use these event types to get live updates with data from Misty's sensors and other system services.</p>
+<p>To receive event messages, you can register event listeners in your skill code. You can also subscribe to event messages from a remote device by connecting to Misty's WebSocket server.</p>
+<p>When you register for event messages, you can:</p>
+<ul>
+<li>filter out unwanted data by specifying which property values an event message should include</li>
+<li>apply conditions to receive messages only when the property values for an event meet specific criteria</li>
+</ul>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> If your Misty is using the <code>Current</code> version of Misty's WebSocket system, WebSocket event messages do not include <code>SensorName</code> or <code>Type</code> key/value pairs. Use Misty's <a href="/misty-ii/rest-api/api-reference/#getwebsocketversion">GetWebsocketVersion</a> command to find out which version your robot is using, and use <a href="/misty-ii/rest-api/api-reference/#setwebsocketversion">SetWebsocketVersion</a> to switch versions.
+</p></div><p></p>
+<p></p><div class="boxed tipBox"><p>
+<strong>Tip:</strong> Some event types (such as <code>TimeOfFlight</code> and <code>ActuatorPosition</code>) stream event messages from a group of related sensors. When you set up a generalized event listener for these event types, you receive messages from every sensor in the group. Because the system defaults to reporting the message from the sensor with the most recently updated data, this can result in a situation where one sensor appears to send messages more frequently than the other sensors in that group, even when using very low debounce values.</p>
+<p>To avoid this, we recommend using <strong>property tests</strong>/<strong>event conditions</strong> when you register event listeners for event types that report data from more than one sensor. This allows you to configure a listener to handle messages only from one specific sensor in a group. You can register multiple event listeners - each with unique property tests - for  any single event type. In this manner, you can create a group of event listeners for a single event type, where each listener is assigned to trigger an event callback only on receiving messages from one specific sensor associated with that event type.
+</p></div><p></p>
+<h2 id="actuatorposition">ActuatorPosition<a class="header-permalinks" href="#actuatorposition"><i class="ion-link"></i></a></h2><p>The <code>ActuatorPosition</code> event type provides information about the position of the actuators responsible for controlling the movement of Misty's head and arms. <code>ActuatorPosition</code> data is sent at timed intervals you define when you register for <code>ActuatorPosition</code> messages.</p>
+<p>In the <code>ActuatorPosition</code> data object, the value of the <code>sensorName</code> property is the name of the actuator you are receiving information about (<code>Actuator_HeadPitch</code>, <code>Actuator_HeadYaw</code>, <code>Actuator_HeadRoll</code>, <code>Actuator_LeftArm</code>, or <code>Actuator_RightArm</code>).  The <code>value</code> property holds a number indicating the position of the actuator (in degrees).</p>
+<p>When you subscribe to the <code>ActuatorPosition</code> data stream, you should specify which actuator you want to receive messages about. For example, the following sample code shows how to use a property comparison test to get data from the sensor for the actuator responsible for controlling the movement of Misty's right arm with the on-robot JavaScript API:</p>
+<pre><code class="lang-JavaScript">// Register for ActuatorPosition data for the actuator for Misty's right arm
+misty.AddPropertyTest("ActuatorPosition", "sensorName", "==", "Actuator_RightArm", "string");
+misty.RegisterEvent("ActuatorPosition", "ActuatorPosition", 1000, true);
+
+// Callback function that triggers each time ActuatorPosition data is sent
+function _ActuatorPosition(data) {
+// Do something with the data
+}
+</code></pre>
+<p>Sample <code>ActuatorPosition</code> data:</p>
+<pre><code class="lang-JSON">ActuatorPosition {
+    "eventName": "ActuatorPosition",
+    "message": {
+        "actuatorId": "NBQEA0",
+        "created": "2019-01-09T20:15:38.0870356Z",
+        "expiry": "2019-01-09T20:15:39.0870356Z", 
+        "sensorId": "ala",
+        "sensorName": "Actuator_LeftArm",
+        "value":-5.09
+    },
+    "type":"ActuatorPosition"
+}
+</code></pre>
+<h2 id="audioplaycomplete">AudioPlayComplete<a class="header-permalinks" href="#audioplaycomplete"><i class="ion-link"></i></a></h2><p><code>AudioPlayComplete</code> WebSocket data is sent every time Misty finishes playing an audio file. It is not sent at timed intervals.</p>
+<pre><code class="lang-JSON">AudioPlayComplete {
+    "eventName":"AudioPlayComplete",
+    "message":{
+        "created":"2019-04-08T20:54:36.7051135Z",
+        "metaData":{
+            "directory":"Idle",
+            "duration":0,
+            "name":"002-Ahhh.wav",
+            "vad":[0,0,-0.5]
+        }
+    }
+}
+</code></pre>
+<h2 id="batterycharge">BatteryCharge<a class="header-permalinks" href="#batterycharge"><i class="ion-link"></i></a></h2><p>The <code>BatteryCharge</code> event type provides a stream of information about the current state of Misty's battery, including charge percentage, voltage, and charging status. The <code>BatteryCharge</code> event message includes the following key/value pairs:</p>
+<ul>
+<li><code>chargePercent</code> (double) - Decimal value representing current charge percent.</li>
+<li><code>created</code> (string) - Timestamp that describes when the system created this message.</li>
+<li><code>current</code> (int) - The current flowing into or discharging from the battery. This value is negative when the battery is discharging, and positive when the battery is being charged.</li>
+<li><code>expiry</code> (string) - Timestamp describing the moment after which the values in this message should no longer be considered valid.</li>
+<li><code>healthPercent</code> (double)</li>
+<li><code>isCharging</code> (bool) - Returns <code>true</code> if the battery is charging. Otherwise, <code>false</code>.</li>
+<li><code>sensorId</code> (string) - The <code>sensorId</code> of the system component that returns the battery charge message (<code>charge</code>).</li>
+<li><code>state</code> (string) - The charge state of the battery. Possible values are:<ul>
+<li><code>Charging</code> (if battery is receiving current)</li>
+<li><code>Discharging</code> (if battery is losing current)</li>
+<li><code>Charged</code> (if battery is fully charged)</li>
+<li><code>Unknown</code> (if you check the charge levels before Misty is fully booted, or if the RT board resets and the system has not yet learned the actual battery state)</li>
+<li><code>Fault</code> (can occur if the charger does not detect the battery)</li>
+</ul>
+</li>
+<li><code>temperature</code> (int)</li>
+<li><code>trained</code> (bool) - Returns <code>true</code> if the battery has been trained. Otherwise, <code>false</code>.</li>
+<li><code>voltage</code> (double) - The battery's voltage.</li>
+</ul>
+<p>Sample <code>BatteryCharge</code> data:</p>
+<pre><code class="lang-JSON">{
+  "eventName": "BatteryChargeEvent",
+  "message": {
+    "chargePercent": null,
+    "created": "2019-07-23T16:49:27.558817Z",
+    "current": -0.441,
+    "healthPercent": null,
+    "isCharging": false,
+    "sensorId": "charge",
+    "state": "Discharging",
+    "temperature": 83,
+    "trained": false,
+    "voltage": 8.203
+  }
+}
+</code></pre>
+<h2 id="bumpsensor">BumpSensor<a class="header-permalinks" href="#bumpsensor"><i class="ion-link"></i></a></h2><p>The <code>BumpSensor</code> data stream sends information each time one of the bump sensors on Misty's base is pressed or released. In the <code>BumpSensor</code> data object, the value of the <code>sensorName</code> property is the name of the bump sensor that triggered the event (<code>Bump_FrontRight</code>, <code>Bump_FrontLeft</code>, <code>Bump_RearRight</code>, or <code>Bump_RearLeft</code>). The value of the <code>isContacted</code> property is a boolean indicating whether the bump sensor was pressed (<code>true</code>) or released (<code>false</code>).The <code>BumpSensor</code> data object also provides “pose” information about Misty at the time of the event. For more about pose, see the <a href="/tools-&amp;-apps/web-based-tools/command-center/#navigation">mapping section of the Command Center documentation</a>.</p>
+<p>For an example that shows how to register for and use data from <code>BumpSensor</code> events with Misty's on-robot JavaScript API, see the <a href="/misty-ii/javascript-sdk/tutorials/#bump-sensors">Bump Sensors skill tutorial</a>.</p>
+<p>Sample <code>BumpSensor</code> data:</p>
+<pre><code class="lang-JSON">BumpSensor {
+    "eventName": "BumpSensor",
+    "message": {
+        "created": "2019-01-09T20:32:27.1036178Z",
+        "expiry": "2019-01-09T20:32:27.2286178Z",
+        "isContacted": true,
+        "pose": {
+            "bearing": -0.5585993432483588,
+            "created": "2019-01-09T16:36:46.7089139Z",
+            "distance": 0.14150971628586034,
+            "elevation": 0,
+            "frameId": "RobotBaseCenter",
+            "framesProvider": {
+                "rootFrame": {
+                    "created": "2019-01-09T16:36:46.6151597Z",
+                    "id": "RobotBaseCenter",
+                    "isStatic": true,
+                    "linkFromParent": {
+                        "isStatic": true,
+                        "parentFrameId": "",
+                        "transformFromParent": {
+                            "bearing": 0,
+                            "distance": 0,
+                            "elevation": 0,
+                            "pitch": 0,
+                            "quaternion": {
+                                "isIdentity": true,
+                                "w": 1,
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "roll": 0,
+                            "x": 0,
+                            "y": 0,
+                            "yaw": 0,
+                            "z": 0
+                        },
+                        "transformToParent": {
+                            "bearing": 3.141592653589793,
+                            "distance": 0,
+                            "elevation": 0,
+                            "pitch": 0,
+                            "quaternion": {
+                                "isIdentity": true,
+                                "w": 1,
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "roll": 0,
+                            "x": 0,
+                            "y": 0,
+                            "yaw": 0,
+                            "z": 0
+                        }
+                    }
+                }
+            },
+            "homogeneousCoordinates": {
+                "bearing": -0.5585993432483588,
+                "distance": 0.14150971628586034,
+                "elevation": 0,
+                "pitch": 0,
+                "quaternion": {
+                    "isIdentity": true,
+                    "w": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "roll": 0,
+                "x": 0.11999999731779099,
+                "y": -0.07500000298023224,
+                "yaw": 0,
+                "z": 0
+            },
+            "pitch": 0,
+            "roll": 0,
+            "x": 0.11999999731779099,
+            "y": -0.07500000298023224,
+            "yaw": 0,
+            "z": 0
+        },
+        "sensorId": "bfr",
+        "sensorName": "Bump_FrontRight"
+    },
+    "type":"BumpSensor"
+}
+</code></pre>
+<h2 id="driveencoders">DriveEncoders<a class="header-permalinks" href="#driveencoders"><i class="ion-link"></i></a></h2><p>The <code>DriveEncoders</code> data stream provides information about the angular velocity (in degrees per second) and rotation (in degrees) for Misty's left and right encoders. <code>DriveEncoders</code> data is sent at timed intervals you define when you register for <code>DriveEncoders</code> messages.</p>
+<p>Sample <code>DriveEncoders</code> sensor data:</p>
+<pre><code class="lang-JSON">{
+  "eventName": "DriveEncodersEvent",
+  "message": {
+    "created": "2019-07-23T16:54:05.7372361Z",
+    "leftDistance": 626,
+    "leftVelocity": 249,
+    "rightDistance": 676,
+    "rightVelocity": 247,
+    "sensorId": "enc"
+  }
+}
+</code></pre>
+<h2 id="facerecognition">FaceRecognition<a class="header-permalinks" href="#facerecognition"><i class="ion-link"></i></a></h2><p>You can subscribe to the <code>FaceRecognition</code> WebSocket to obtain data on both face detection and face recognition events.</p>
+<p>The <code>EventName</code> value is the name you provide when you register the WebSocket connection.</p>
+<p>If face recognition is running on the robot, and a previously trained face is recognized, the <code>PersonName</code> value is the name previously assigned to that face. The <code>PersonName</code> value is <code>unknown_person</code> if an untrained/unknown face is detected. The <code>PersonName</code> value is <code>null</code> if face recognition is not currently running.</p>
+<p><code>TrackId</code> is reserved data that may change in the future.</p>
+<p>Sample FaceRecognition data for a face recognition event:</p>
+<pre><code class="lang-javascript">FaceRecognition{
+    "EventName":"MyFaceRecognition",
+    "Message":{
+        "Bearing":-3,
+        "Created":"2018-07-02T16:26:20.1718422Z",
+        "Distance":71,
+        "Elevation":3,
+        "Expiry":"2018-07-02T16:26:20.9218446Z",
+        "PersonName":"Barkley",
+        "SensorId":null,
+        "SensorName":null,
+        "TrackId":0
+    },
+    "Type":"FaceRecognition"
+}
+</code></pre>
+<h2 id="facetraining">FaceTraining<a class="header-permalinks" href="#facetraining"><i class="ion-link"></i></a></h2><p>The <code>FaceTraining</code> event type sends messages from Misty's computer vision service with information about the status the face training process.</p>
+<p></p><div class="boxed tipBox"><p>
+<strong>Tip:</strong> To start the face training process, you must issue a <a href="/misty-ii/rest-api/api-reference/#startfacetraining"><code>StartFaceTraining</code></a> command.
+</p></div><p></p>
+<p>In addition to <code>created</code> and <code>sensorId</code> fields, <code>FaceTraining</code> messages include the following properties:</p>
+<ul>
+<li><code>isProcessComplete</code> (boolean) - Returns <code>true</code> when the face training process is complete or cancelled due to an error or timing out.</li>
+<li><code>message</code> (string) - A message from Misty's computer vision service with information about the status of the face training process. Includes <code>Error</code> messages (i.e. when the face training process times out, or when it can't be started because face training is already underway or the value passed in for the <code>FaceId</code> argument is already in use), <code>Warning</code> messages (i.e. if Misty detects no faces, more than one face, or if the detected face is too far away), and <code>Status</code> messages (i.e. which phase of training is currently underway).</li>
+<li><code>messageType</code> (string) - A type label for the sent message (i.e. <code>Warning</code>, <code>Error</code>, or <code>Status</code>).</li>
+</ul>
+<pre><code class="lang-JSON">// Sample FaceTraining event message
+{
+  "eventName":"FaceTraining",
+  "message": {
+    "created":"2019-09-17T19:31:39.2670814Z",
+    "isProcessComplete":false,
+    "message":"Face training detection phase complete.",
+    "messageType":"Status",
+    "sensorId":"cv"
+  }
+}
+</code></pre>
+<h2 id="haltcommand">HaltCommand<a class="header-permalinks" href="#haltcommand"><i class="ion-link"></i></a></h2><p><code>HaltCommand</code> WebSocket data is sent every time the robot stops and contains the date and time of the event. It is not sent at timed intervals.</p>
+<h2 id="hazardnotification">HazardNotification<a class="header-permalinks" href="#hazardnotification"><i class="ion-link"></i></a></h2><p>Misty sends <code>HazardNotification</code> event messages each time the hazard system detects a change to a hazard state. You can subscribe to <code>HazardNotification</code> events to be notified when Misty enters or exits a specific hazard state. Use this data to have Misty programmatically alter her course or change her behavior in skills that use automated movement and locomotion.</p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> This event type is currently in <strong>Alpha</strong>, and related hardware, firmware, or software is still under development. Feel free to use this event type, but recognize that it may behave unpredictably at this time.
+</p></div><p></p>
+<p>Each <code>HazardNotification</code> event message includes the following properties:</p>
+<ul>
+<li><code>bumpSensorsHazardState</code> - An array of objects that describe the hazard state for each of Misty's bump sensors. Each object in the array includes a <code>sensorName</code> property with a string value for a bump sensor name, and an <code>inHazard</code> property with a boolean value indicating whether that bump sensor is in a hazard state. The hazard system considers a bump sensor to be in a hazard state when that sensor is activated/pressed.</li>
+<li><code>criticalInternalError</code> - A number indicating the presence of a critical internal error that could prevent the hazards system from functioning. If 0, there is no critical internal error; if 1, there is a communication issue between the firmware and the 410 processor in Misty's headboard; if 2, the system has lost communications with Misty's real-time controller. If you encounter a <code>criticalInternalError</code> with a value of 1 or 2, please contact a member of the Misty support team.</li>
+<li><code>currentSensorsHazard</code> - The contents of this property are still under implementation and, for now, can be safely ignored.</li>
+<li><code>driveStopped</code> - An array of objects that describe the hazard state for six zones around Misty. Each object in the array includes a <code>sensorName</code> property with a string value for a zone, and an <code>inHazard</code> property with a boolean value indicating whether that zone is in a hazard state. Data from Misty's time-of-flight and bump sensors can trigger a <code>driveStopped</code> hazard state.</li>
+<li><code>motorStallHazard</code> - The contents of this property are still under implementation and, for now, can be safely ignored.</li>
+<li><code>timeOfFlightSensorsHazardState</code> - An array of objects that describe the hazard state for each of Misty's time-of-flight sensors. Each object in the array includes a <code>sensorName</code> property with a string value for a time-of-flight sensor name, and an <code>inHazard</code> property with a boolean value indicating whether that sensor is in a hazard state. The hazard system considers a time-of-flight sensor to be in a hazard state when the sensor detects a distance greater than a predetermined threshold. For downward-facing time-of-flight sensors, this threshold defaults to 0.06 meters. The hazard system is disabled for front- and rear-facing time-of-flight sensors at this time.<!-- * `motorStallHazard` - An array of objects that describe the hazard state for Misty's head, arm, and drive motors. Each object in the array includes a `sensorName` property with a string value for one of Misty's motors, and an `inHazard` property with a boolean value indicating whether that motor is in a hazard state. The `motorStallHazard` state triggers when Misty's sensor data indicates a motor is attempting and failing to enable movement. --></li>
+<li><code>excessiveSpeedHazard</code> - An array of objects that describe whether the velocity for a motor has exceeded safe thresholds, thus triggering a hazard state for that motor. The contents of this property are still under implementation, and the <code>excessiveSpeedHazard</code> state is not yet enabled for Misty's head and arm motors. Currently, the system only engages this hazard state when it detects the robot turning at speeds greater than 100 degrees per second. This can sometimes happen as the result of the drive system losing communication with the IMU sensor.</li>
+</ul>
+<p>In the following example of a <code>HazardNotification</code> event message, the <code>TOF_DownBackLeft</code> and <code>TOF_DownBackRight</code> time-of-flight sensors are both in a hazard state.</p>
+<pre><code class="lang-JSON">{
+  "eventName": "HazardNotification",
+  "message": {
+    "bumpSensorsHazardState": [
+      {
+        "inHazard": false,
+        "sensorName": "Bump_FrontRight"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Bump_FrontLeft"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Bump_RearRight"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Bump_RearLeft"
+      }
+    ],
+    "criticalInternalError": 0,
+    "currentSensorsHazard": [
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_RightTrack"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_LeftTrack"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_RightArm"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_LeftArm"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_HeadPitch"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_HeadRoll"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "CurrentSensor_HeadYaw"
+      }
+    ],
+    "driveStopped": [
+      {
+        "inHazard": false,
+        "sensorName": "Front right hazard"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Front center hazard"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Front left hazard"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Back right hazard"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Back center hazard"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "Back left hazard"
+      }
+    ],
+    "motorStallHazard": [
+      {
+        "inHazard": false,
+        "sensorName": "RightDrive"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "LeftDrive"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "RightArm"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "LeftArm"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "HeadPitch"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "HeadRoll"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "HeadYaw"
+      }
+    ],
+    "timeOfFlightSensorsHazardState": [
+      {
+        "inHazard": false,
+        "sensorName": "TOF_Right"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "TOF_Center"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "TOF_Left"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "TOF_Back"
+      },
+      {
+        "inHazard": true,
+        "sensorName": "TOF_DownFrontRight"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "TOF_DownFrontLeft"
+      },
+      {
+        "inHazard": false,
+        "sensorName": "TOF_DownBackRight"
+      },
+      {
+        "inHazard": true,
+        "sensorName": "TOF_DownBackLeft"
+      }
+    ]
+  }
+}
+</code></pre>
+<h3 id="subscribing-to-hazardnotification-events">Subscribing to HazardNotification Events<a class="header-permalinks" href="#subscribing-to-hazardnotification-events"><i class="ion-link"></i></a></h3><p>You can subscribe to <code>HazardNotification</code> event messages to receive notifications when Misty enters or exits a specific hazard state. You can use this information in your skill code to have Misty make decisions about how to move when autonomously navigating her environment.</p>
+<p>The following code provides an example of registering for <code>HazardNotification</code> events in a skill running on Misty using her JavaScript API. In this code, we add return properties for <code>BumpSensorsHazardState</code> and <code>TimeOfFlightSensorsHazardState</code>. This allows us to parse <code>HazardNotification</code> event messages in a callback to understand which sensors are in a hazard state. This example uses <code>HazardNotification</code> messages to turn Misty's chest LED white when it's safe for her to drive, and red when Misty is in a hazard state. We populate an array with the names of the sensors that are in a hazard state, and we print that array to <code>SkillData</code> event listeners with the <code>misty.Debug()</code> method.</p>
+<pre><code class="lang-JavaScript">misty.Debug("HazardNotification skill starting!");
+
+// White LED means it's safe to drive
+// Red LED means Misty is in a hazard state
+
+misty.ChangeLED(255, 255, 255);
+
+misty.AddReturnProperty("Hazard", "BumpSensorsHazardState");
+misty.AddReturnProperty("Hazard", "TimeOfFlightSensorsHazardState");
+misty.RegisterEvent("Hazard", "HazardNotification", 0, true);
+
+function _Hazard(data) {
+    var safe = false;
+    // Print HazardNotification event message &amp; data from 
+    // added return properties 
+    misty.Debug(JSON.stringify(data));
+    misty.Debug(JSON.stringify(data.AdditionalResults));
+    const dataIn = data.AdditionalResults;
+    // Push the name of each sensor that is in a hazard state
+    // into an array called triggers
+    var triggers = [];
+    dataIn.forEach(sensor =&gt; {
+        sensor.forEach(sensorData =&gt; {
+            sensorData.InHazard ? triggers.push(sensorData.SensorName) : {}
+        });
+    });
+    // If the triggers array is empty, it's safe to drive.
+    // If there are elements in this array, Misty is in
+    // a hazard state.
+    triggers.length ? {} : safe = true;
+    safe ? misty.ChangeLED(255, 255, 255) : misty.ChangeLED(255, 0, 0);
+    misty.Debug(safe);
+    misty.Debug(triggers);
+}
+</code></pre>
+<h2 id="imu">IMU<a class="header-permalinks" href="#imu"><i class="ion-link"></i></a></h2><p>The IMU data stream provides information from Misty's Inertial Measurement Unit (IMU) sensor. It includes information about:</p>
+<ul>
+<li>the pitch, yaw, and roll orientation angles of the sensor (in degrees)</li>
+<li>the force (in meters per second) currently applied to the sensor along its pitch, yaw, and roll rotational axes</li>
+<li>the force (in meters per second squared) currently applied to the sensor along its X, Y, and Z axes</li>
+</ul>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> Misty's IMU orients its heading to 0/360 degrees each time Misty boots up or resets her real-time controller. For Misty, a <code>yaw</code> value of 0/360 degrees does <strong>not</strong> represent true north unless Misty is facing true north when the IMU orients its heading. Additionally, because the IMU is located in Misty's torso, readings from the IMU only change when Misty's body moves. They do not change relative to the position of Misty's head.
+</p></div><p></p>
+<p><code>IMU</code> message properties:</p>
+<ul>
+<li><code>pitch</code> (double) - Misty's orientation on her pitch rotational axis (in degrees). A positive number means Misty is pitched at an angle forward, and a negative number means she is pitched back.</li>
+<li><code>roll</code> (double) - Misty's orientation on her roll rotational axis (in degrees). A positive number means Misty is tipped at an angle to her right, and a negative number means she is tipped to her left.</li>
+<li><code>yaw</code> (double) - Misty's orientation on her yaw rotational axis (in degrees). (Use this value to determine Misty's current heading when sending <code>DriveHead</code> commands.) A positive number means Misty is rotated to the left, and a negative number means she is rotated to the right.</li>
+<li><code>pitchVelocity</code> (double) - The force (in meters per second) currently applied to Misty along her <code>pitch</code> rotational axis.</li>
+<li><code>rollVelocity</code> (double) - The force (in meters per second) currently applied to Misty along her <code>roll</code> rotational axis.</li>
+<li><code>yawVelocity</code> (double) - The force (in meters per second) currently applied to Misty along her <code>yaw</code> rotational axis.</li>
+<li><code>xAcceleration</code> (double) - The force (in meters per second squared) currently applied to Misty along her <code>x</code> axis. A positive value means Misty is accelerating forward, and a negative value means she is accelerating backward.</li>
+<li><code>yAcceleration</code> (double) - The force (in meters per second squared) currently applied to Misty along her <code>y</code> axis. A positive value means Misty is accelerating to her left, and a negative value means she is accelerating to her right.</li>
+<li><code>zAcceleration</code> (double) - The force (in meters per second squared) currently applied to Misty along her <code>z</code> axis. A positive value means Misty is accelerating up, and a negative value means Misty is accelerating down. When Misty is set on a level surface, this value should be a negative number that indicates the force of gravity on Misty's IMU sensor.</li>
+</ul>
+<pre><code class="lang-JSON">IMU {
+    "eventName": "IMU",
+    "message": {
+        "created": "2019-01-09T21:47:53.7607457Z",
+        "expiry": "2019-01-09T21:47:54.1607457Z",
+        "pitch":11.193,
+        "pitchVelocity": 0.057,
+        "roll": 2.468,
+        "rollVelocity": -0.1,
+        "sensorId": "imu",
+        "sensorName": null,
+        "xAcceleration": 0.75,
+        "yAcceleration": 0.73,
+        "yaw": 2.004,
+        "yawVelocity": 0.096,
+        "zAcceleration": 9.80
+    },
+    "type":"IMU"
+}
+</code></pre>
+<p>By default, Misty sends <code>IMU</code> data to listeners of <code>IMU</code> events once every five seconds.</p>
+<p></p><div class="boxed tipBox"><p>
+<strong>Tip:</strong> Misty uses a <strong>right-handed coordinate frame</strong> to determine the value of each property returned in IMU event messages.
+</p></div><p></p>
+<h2 id="keyphraserecognized">KeyPhraseRecognized<a class="header-permalinks" href="#keyphraserecognized"><i class="ion-link"></i></a></h2><p>Misty sends <code>KeyPhraseRecognized</code> event messages when she recognizes the "Hey, Misty!" key phrase. </p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> This event type is currently in <strong>Beta</strong>, and related hardware, firmware, or software is still under development. Feel free to use this event type, but recognize that it may behave unpredictably at this time.
+</p></div><p></p>
+<p><code>KeyPhraseRecognized</code> event messages include a <code>confidence</code> value that rates system's confidence in having heard the key phrase.</p>
+<pre><code class="lang-JSON">{
+    "eventName":"KeyPhraseRecognizedEvent",
+    "message": {
+        "confidence":81,
+        "created":"2019-07-31T06:53:18.151743Z"
+    }
+}'
+</code></pre>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note</strong> </p>
+<ul>
+<li>When you call the <code>StartKeyPhraseRecognition</code> command, Misty listens for the key phrase by continuously sampling audio from the environment and comparing that audio to her trained key phrase model (in this case, "Hey, Misty!"). Misty does <strong>not</strong> create or save audio recordings while listening for the key phrase.</li>
+<li>To have Misty record what you say (for example, if you want to use speech to invoke other actions), you need to send a <a href="/misty-ii/rest-api/api-reference#startrecordingaudio"><code>StartRecordingAudio</code></a> command after receiving a <code>KeyPhraseRecognized</code> event. You can then do something with that audio file in your code, like hand it off to a third-party service for additional processing.</li>
+<li>Misty cannot record audio and listen for the "Hey, Misty!" key phrase at the same time. Sending a command to <a href="/misty-ii/rest-api/api-reference#startrecordingaudio">start recording audio</a> automatically stops key phrase recognition. To have Misty start listening for the key phrase after recording an audio file, you must issue another <code>StartKeyPhraseRecognition</code> command.
+<p></p></li></ul></div><p>
+</p><p>You must start key phrase recognition before Misty can send <code>KeyPhraseRecognized</code> event messages. Follow these steps to code Misty to respond to the "Hey, Misty!" key phrase:</p>
+<ol>
+<li>Invoke the <a href="/misty-ii/javascript-sdk/api-reference/#misty-startkeyphraserecognition"><code>StartKeyPhraseRecognition</code></a> command.</li>
+<li>Register for <code>KeyPhraseRecognized</code> events. When Misty hears the key phrase, she sends a message to <code>KeyPhraseRecognized</code> event listeners.</li>
+<li>Write the code to handle what Misty should do when she hears the key phrase inside the <code>KeyPhrasedRecognized</code> event callback. For example, you might have Misty turn to face you or start recording audio to hand off to a third-party service for additional processing.</li>
+</ol>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> When Misty recognizes the key phrase, she automatically stops listening for key phrase events. In order to start Misty listening for the key phrase again, you need to issue another <code>StartKeyPhraseRecognition</code> command.
+</p></div><p></p>
+<p>As an example of how to use this functionality in your skill code, the following has Misty play a sound and wave when she hears the key phrase.</p>
+<pre><code class="lang-JavaScript">StartKeyPhraseRecognition();
+
+function StartKeyPhraseRecognition() {
+   misty.Debug("Starting key phrase recognition...");
+   // Starts Misty listening for the "Hey, Misty" key phrase
+   misty.StartKeyPhraseRecognition();
+   // Registers for KeyPhraseRecognized events
+    misty.RegisterEvent("KeyPhraseRecognized","KeyPhraseRecognized", 10, false);
+    misty.Debug("KeyPhraseRecognition started. Misty will play a sound and wave when she hears 'Hey Misty'.");
+}
+
+// Callback function to execute when Misty hears the key phrase
+function _KeyPhraseRecognized() {
+   waveRightArm();
+   misty.Debug("Key phrase recognized!");
+   misty.Debug("Audio recording stopped. Starting key phrase recognition again...");
+   // Starts Misty listening for the key phrase again
+   StartKeyPhraseRecognition();
+}
+
+// Helper function to wave Misty's arm
+function waveRightArm() {
+   misty.MoveArmDegrees("left", 90, 45); // Left arm fully down
+   misty.Pause(50);
+   misty.MoveArmDegrees("right", 90, 45); // Right arm fully down
+   misty.Pause(50); // Pause for 3 seconds
+   misty.MoveArmDegrees("right", -45, 45); // Right arm fully up
+   misty.Pause(7000); // Pause with arm up for 5 seconds (wave!)
+   misty.MoveArmDegrees("right", 90, 45); // Right arm fully down
+}
+</code></pre>
+<h2 id="locomotioncommand">LocomotionCommand<a class="header-permalinks" href="#locomotioncommand"><i class="ion-link"></i></a></h2><p><code>LocomotionCommand</code> WebSocket data is sent every time the linear or angular velocity of the robot changes. It is not sent at timed intervals.</p>
+<p>Sample locomotion data:</p>
+<pre><code class="lang-javascript">LocomotionCommand{
+    "EventName":"LocomotionCommand",
+    "Message":{
+        "ActionId":0,
+        "AngularVelocity":0,
+        "Created":"2018-04-02T22:59:39.3350238Z",
+        "LinearVelocity":0.30000000000000004,
+        "UsePid":true,
+        "UseTrapezoidalDrive":true,
+        "ValueIndex":0
+    },
+    "Type":"LocomotionCommand"
+}
+</code></pre>
+<h2 id="selfstate">SelfState<a class="header-permalinks" href="#selfstate"><i class="ion-link"></i></a></h2><p>The <code>SelfState</code> WebSocket provides a variety of data about Misty’s current internal state, including:</p>
+<ul>
+<li><code>battery</code> - Provides information about the state of Misty's battery, including charge percentage, voltage, and charging status.</li>
+<li><code>cameraStatus</code>- Provides information about the status of Misty's RGB camera. This information can be useful when you need to check whether the RGB camera is ready or already in use before attempting to use it for another purpose.</li>
+<li><code>localIPAddress</code> - Misty's current local IP address. Use this IP address to send Misty REST requests or set up WebSocket connections.</li>
+<li><code>location</code> - A data object with information about Misty's current location and orientation ("pose") relative to her currently active occupancy grid.</li>
+<li><code>robotRunState</code> - Provides information about Misty's current run state. Misty's <code>currentState</code> is <code>Loading</code> when the system is booting up; <code>Running</code> when the system has fully booted and is not updating; and <code>Updating</code> when the system is installing an update.</li>
+<li><code>slamStatus</code> - The current status of Misty's simultaneous localization and mapping (SLAM) system. <code>SlamStatus</code> event messages can also be subscribed to independently. See the <a href="./#slamstatus"><code>SlamStatus</code> docs</a> for more information.</li>
+</ul>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> This event type is currently in <strong>Alpha</strong>, and related hardware, firmware, or software is still under development. Feel free to use this event type, but recognize that it may behave unpredictably at this time.</p>
+<p>There are a number of fields in the event message data structure that are reserved for future use and which may be empty or contain <code>null</code> data:</p>
+<ul>
+<li><code>Acceleration</code></li>
+<li><code>BumpedState</code></li>
+<li><code>CurrentGoal</code></li>
+<li><code>MentalState</code></li>
+<li><code>Personality</code></li>
+<li><code>PhysiologicalBehavior</code>
+<p></p></li></ul></div><p>
+</p><p><code>SelfState</code> WebSocket messages are sent even if the data has not changed, as the data is sent via timed updates, instead of being triggered by events. The <code>SelfState</code> WebSocket can send data as frequently as every 100ms, though it is set by default to 250ms. To avoid having to handle excess data, you can change the message frequency for the WebSocket with the <code>DebounceMs</code> field, as shown in the <code>lightSocket.js</code> JavaScript helper.</p>
+<p>Sample SelfState data:</p>
+<pre><code class="lang-JSON">SelfState
+{
+  "eventName": "SelfState",
+  "message": {
+    "acceleration": {
+      "units": "None",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "battery": {
+      "chargePercent": null,
+      "created": "2019-08-14T21:17:53.7266429Z",
+      "current": -0.911,
+      "expiry": "2019-08-14T21:18:03.7266429Z",
+      "healthPercent": null,
+      "isCharging": false,
+      "sensorId": "charge",
+      "sensorName": "/Sensors/RTC/BatteryCharge",
+      "state": "Discharging",
+      "temperature": 21,
+      "trained": false,
+      "voltage": 6.612
+    },
+    "bumpedState": {
+      "disengagedSensorIds": [],
+      "disengagedSensorNames": [],
+      "disengagedSensors": [],
+      "engagedSensorIds": [],
+      "engagedSensorNames": [],
+      "engagedSensors": []
+    },
+    "cameraStatus": {
+      "isTakingPicture": false,
+      "onboardCameraStatus": "Streaming"
+    },
+    "currentGoal": {
+      "directedMotion": {
+        "commandGroups": [
+          {
+            "arguments": {
+              "apiCommand": "MoveHead",
+              "changeDisplayImageGesture": null,
+              "lookParameters": {
+                "actionDelayInSeconds": null,
+                "actionDurationInSeconds": 1,
+                "fractionalPupilUseLimit": null,
+                "rollInRadians": -0.7330382858376184,
+                "spatialPrecisionInMeters": null,
+                "targetPose": {
+                  "bearing": 0,
+                  "created": "2019-08-14T20:28:48.3341954Z",
+                  "distance": 10,
+                  "elevation": 0,
+                  "frameId": "RobotNeck",
+                  "framesProvider": {
+                    "rootFrame": {
+                      "created": "2019-08-14T16:21:18.1035121Z",
+                      "id": "RobotBaseCenter",
+                      "isStatic": true,
+                      "linkFromParent": {
+                        "isStatic": true,
+                        "parentFrameId": "",
+                        "transformFromParent": {
+                          "bearing": 0,
+                          "distance": 0,
+                          "elevation": 0,
+                          "pitch": 0,
+                          "quaternion": {
+                            "isIdentity": true,
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "roll": 0,
+                          "x": 0,
+                          "y": 0,
+                          "yaw": 0,
+                          "z": 0
+                        },
+                        "transformToParent": {
+                          "bearing": 3.141592653589793,
+                          "distance": 0,
+                          "elevation": 0,
+                          "pitch": 0,
+                          "quaternion": {
+                            "isIdentity": true,
+                            "w": 1,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
+                          "roll": 0,
+                          "x": 0,
+                          "y": 0,
+                          "yaw": 0,
+                          "z": 0
+                        }
+                      }
+                    }
+                  },
+                  "homogeneousCoordinates": {
+                    "bearing": 0,
+                    "distance": 10,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 10,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "pitch": 0,
+                  "roll": 0,
+                  "x": 10,
+                  "y": 0,
+                  "yaw": 0,
+                  "z": 0
+                },
+                "worldObjectId": null
+              }
+            },
+            "name": "Misty2.AffectiveHeadEyeAction"
+          }
+        ],
+        "id": 8835
+      },
+      "directedMotionBehavior": "Update",
+      "haltActionSequence": false
+    },
+    "localIPAddress": "192.168.7.32",
+    "location": {
+      "bearing": 0,
+      "bearingThreshold": {
+        "lowerBound": 0,
+        "upperBound": 0
+      },
+      "distance": 0,
+      "distanceThreshold": {
+        "lowerBound": 0,
+        "upperBound": 0
+      },
+      "elevation": 0,
+      "elevationThreshold": {
+        "lowerBound": 0,
+        "upperBound": 0
+      },
+      "pose": {
+        "bearing": 0,
+        "created": "2019-08-14T21:17:53.9314769Z",
+        "distance": 0,
+        "elevation": 0,
+        "frameId": "WorldOrigin",
+        "framesProvider": {
+          "rootFrame": {
+            "created": "2019-08-14T16:21:18.1035121Z",
+            "id": "RobotBaseCenter",
+            "isStatic": true,
+            "linkFromParent": {
+              "isStatic": true,
+              "parentFrameId": "",
+              "transformFromParent": {
+                "bearing": 0,
+                "distance": 0,
+                "elevation": 0,
+                "pitch": 0,
+                "quaternion": {
+                  "isIdentity": true,
+                  "w": 1,
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "roll": 0,
+                "x": 0,
+                "y": 0,
+                "yaw": 0,
+                "z": 0
+              },
+              "transformToParent": {
+                "bearing": 3.141592653589793,
+                "distance": 0,
+                "elevation": 0,
+                "pitch": 0,
+                "quaternion": {
+                  "isIdentity": true,
+                  "w": 1,
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "roll": 0,
+                "x": 0,
+                "y": 0,
+                "yaw": 0,
+                "z": 0
+              }
+            }
+          }
+        },
+        "homogeneousCoordinates": {
+          "bearing": 0,
+          "distance": 0,
+          "elevation": 0,
+          "pitch": 0.10141706466674805,
+          "quaternion": {
+            "isIdentity": false,
+            "w": 0.619889557,
+            "x": -0.7773387,
+            "y": -0.041995585,
+            "z": 0.09861117
+          },
+          "roll": -1.7855754801963701,
+          "x": 0,
+          "y": 0,
+          "yaw": 0.18964907113092544,
+          "z": 0
+        },
+        "pitch": 0.10141706466674805,
+        "roll": -1.7855754801963701,
+        "x": 0,
+        "y": 0,
+        "yaw": 0.18964907113092544,
+        "z": 0
+      },
+      "unitOfMeasure": "None"
+    },
+    "mentalState": {
+      "affect": {
+        "arousal": 0,
+        "dominance": 0,
+        "valence": 0
+      },
+      "created": "2019-08-14T21:17:53.9314769Z",
+      "personality": {
+        "agreeableness": 0,
+        "conscientiousness": 0,
+        "extraversion": 0,
+        "neuroticism": 0,
+        "openness": 0
+      },
+      "physiologicalBehavior": {
+        "hunger": {
+          "isEating": false,
+          "level": 0
+        },
+        "sleepiness": {
+          "isSleeping": false,
+          "level": 0
+        }
+      }
+    },
+    "occupancyGridCell": {
+      "x": 0,
+      "y": 0
+    },
+    "occupancyGridCellMeters": 0,
+    "serialMessages": [],
+    "slamStatus": {
+      "runMode": "Uninitialized",
+      "sensorStatus": "Ready",
+      "status": 2,
+      "statusList": [
+        "Ready"
+      ]
+    },
+    "touchedState": {
+      "disengagedSensors": [],
+      "engagedSensors": []
+    }
+  }
+}
+</code></pre>
+<h2 id="serialmessage">SerialMessage<a class="header-permalinks" href="#serialmessage"><i class="ion-link"></i></a></h2><p>The <code>SerialMessage</code> data stream provides information sent to Misty by external hardware connected to the ports on her back. <code>SerialMessage</code> events trigger when Misty receives data sent through one of these ports.</p>
+<p>To send <code>SerialMessage</code> data to Misty from an Arduino, use:</p>
+<pre><code class="lang-C++">// ARDUINO
+
+Serial.println("&lt;your_data_to_Misty&gt;")
+</code></pre>
+<p>Sending data to Misty as a JSON string can make it easier to parse the data in your skill code. This example shows how you can format data from a temperature and pressure sensor connected to an Arduino:</p>
+<pre><code class="lang-C++">// ARDUINO
+
+Serial.println("{\"temperature\":\""+String(&lt;temp_value&gt;)+"\",\"pressure\":\""+String(&lt;pressure_value&gt;)+"\"}");
+</code></pre>
+<p>Handle this data with Misty's on-robot JavaScript API by registering for <code>SerialMessage</code> events. Add <code>SerialMessage</code> as an additional return property, and parse the data in the <code>_SerialMessage()</code> callback that triggers when the data is ready.</p>
+<pre><code class="lang-JavaScript">// MISTY 
+
+// Register for SerialMessage events and add SerialMessage as a return property
+misty.AddReturnProperty("SerialMessage", "SerialMessage");
+misty.RegisterEvent("SerialMessage", "SerialMessage", 0, true);
+
+function _SerialMessage(data) {
+    if(data !== undefined &amp;&amp; data !== null) {
+        // Parse SerialMessage data and assign it to a variable
+        var obj = JSON.parse(data.AdditionalResults[0].Message);
+        var temp = obj.temperature;
+        var pressure = obj.pressure;
+    }
+}
+</code></pre>
+<p>For more about events and callbacks, see the <a href="/misty-ii/javascript-sdk/javascript-skill-architecture/#data-handling-events-amp-callbacks">Data Handling: Events &amp; Callbacks</a> section of <a href="/misty-ii/javascript-sdk/javascript-skill-architecture">JavaScript SDK Architecture</a>.</p>
+<h2 id="skilldata">SkillData<a class="header-permalinks" href="#skilldata"><i class="ion-link"></i></a></h2><p>Subscribe to the <code>SkillData</code> named object to see debug messages, error messages, and other data JavaScript skills publish during skill execution. Use the <code>misty.Debug()</code> command in a skill to send a <code>SkillData</code> message.</p>
+<p>The value of the <code>BroadcastMode</code> parameter in a skill's .json meta file determines when the skill sends <code>SkillData</code> messages, and what kind of data those messages include.</p>
+<ul>
+<li><code>Off</code> - The skill does not send <code>SkillData</code> messages.</li>
+<li><code>Debug</code> - The skill prints error and debug messages to <code>SkillData</code> events.</li>
+<li><code>Verbose</code> - In addition to error and debug messages, the skill sends a message for each command that Misty receives to <code>SkillData</code> events.</li>
+</ul>
+<p>When you connect Misty to the Skill Runner to start and stop skills, the web page subscribes to <code>SkillData</code> events and skill messages print to the console in your web browser. You can create your own subscription to <code>SkillData</code> messages by connecting to Misty's WebSocket server.</p>
+<p><strong>SkillData Message Examples</strong></p>
+<p>This sample shows the <code>SkillData</code> message sent when a skill executes the <code>misty.Debug()</code> command with the string <code>"Hello, world!"</code>:</p>
+<pre><code class="lang-JSON">{
+  "eventName": "SkillData",
+  "message": {
+    "data": {
+      "data": "Hello, world!"
+    },
+    "message": "Calling command 'Debug'",
+    "timestamp": "2019-04-28T22:29:33.0441867Z",
+    "truncated": false
+  }
+}
+</code></pre>
+<p>This sample shows the <code>SkillData</code> message sent when a skill executes a <code>misty.SendExternalRequest()</code> command. The <code>message.data</code> object provides information about the values passed in for the command's arguments.</p>
+<pre><code class="lang-JSON">{
+  "eventName": "SkillData",
+  "message": {
+    "data": {
+      "method": "GET",
+      "resource": "http://soundbible.com/grab.php?id=1949&amp;type=mp3",
+      "authorizationType": "null",
+      "token": "null",
+      "arguments": "null",
+      "save": true,
+      "apply": true,
+      "fileName": "sound",
+      "callback": "null",
+      "callbackRule": "null",
+      "skillToCall": "null",
+      "prePauseMs": 0,
+      "postPauseMs": 0
+    },
+    "message": "Calling command 'SendExternalRequest'",
+    "timestamp": "2019-04-28T22:29:33.0285627Z",
+    "truncated": false
+  }
+}
+</code></pre>
+<h3 id="subscribing-to-skilldata-events">Subscribing to SkillData Events<a class="header-permalinks" href="#subscribing-to-skilldata-events"><i class="ion-link"></i></a></h3><p>To subscribe to <code>SkillData</code> events, you open a WebSocket connection to Misty and send a subscription message to the <code>SkillData</code> named object.</p>
+<p>This example shows how to subscribe to <code>SkillData</code> events in a web page using the <a href="https://developer.mozilla.org/en-US/docs/web/API/WebSockets_API" rel="noopener noreferrer" target="_blank">WebSocket API</a>. In the example, <code>SkillData</code> messages print to the web browser's console.</p>
+<pre><code class="lang-JavaScript">//Misty's IP address
+const ip = "&lt;robot-ip-address&gt;";
+
+function streamSkillData() {
+    //Open a WebSocket connection to Misty
+    const ws = new WebSocket("ws://" + ip + "/pubsub");
+
+    //Send a message to subscribe to SkillData events
+    ws.onopen = function(event) {
+        ws.send(JSON.stringify(
+            {
+            "Operation": "subscribe",
+            "Type": "SkillData",
+            "DebounceMs": null,
+            "EventName": "SkillData",
+            "Message": "",
+            "ReturnProperty": null
+            }
+        ));
+    }
+
+    //Parse and log SkillData messages
+    ws.onmessage = function(event) {
+        var data = event.data
+        console.log(data);
+    };
+};
+
+streamSkillData();
+</code></pre>
+<p>Before you close the WebSocket connection, send a message to unsubscribe to <code>SkillData</code> events. You cannot set up a <code>SkillData</code> subscription when there is an open subscription with the same <code>EventName</code> you are trying to subscribe to.</p>
+<pre><code class="lang-JavaScript">ws.send(JSON.stringify(
+    {
+    "Operation": "unsubscribe",
+    "EventName": "SkillData",
+    "Message": ""
+    }
+));
+ws.close();
+</code></pre>
+<h2 id="slamstatus">SlamStatus<a class="header-permalinks" href="#slamstatus"><i class="ion-link"></i></a></h2><p>Misty's <code>SlamStatus</code> event messages provide information about the current status of Misty's simultaneous localization and mapping (SLAM) system.</p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> Misty’s SLAM capabilities are an alpha feature. Experiment with mapping, but recognize that Misty’s ability to create maps and track within them is unreliable at this time.
+</p></div><p></p>
+<p><code>SlamStatus</code> messages include the following properties:</p>
+<ul>
+<li><code>status</code> (int) - Number that describes the current status of the SLAM system. This number updates with information from the <code>sensorStatus</code> and <code>runMode</code> fields, as well as with other events that occur during a SLAM session. Note that this number represents several status codes simultaneously. You can convert this number to a binary value to see whether the bit field for a given status code is on (<code>1</code>) or off (<code>0</code>). As an example, the status code <code>33028</code> converts to a binary value of <code>1000000100000100</code>. In this binary value, the 3rd, 9th, and 16th bits are flipped. Those bits correspond to the status codes for <code>Exploring</code>, <code>LostPose</code>, and <code>Streaming</code>, respectively. (Note that the system also returns the string fields for all current status codes to the <code>statusList</code> array that comes back with a <code>SlamStatus</code> event message.) The following hexadecimal values correspond to bit fields for each possible status code:<ul>
+<li>0x0000: <code>Uninitialized</code> - The SLAM system is not yet initialized.</li>
+<li>0x0001: <code>Initializing</code> - The SLAM system is initializing.</li>
+<li>0x0002: <code>Ready</code> - Misty's depth sensor and the SLAM system are ready to start mapping and tracking.</li>
+<li>0x0004: <code>Exploring</code> - The SLAM system is mapping.</li>
+<li>0x0008: <code>Tracking</code> - The SLAM system is tracking.</li>
+<li>0x0010: <code>Recording</code> - The SLAM system is recording an <code>.occ</code> file to Misty's local storage.</li>
+<li>0x0020: <code>Resetting</code> - The SLAM system is in the process of shutting down and resetting.</li>
+<li>0x0040: <code>Rebooting</code> - The SLAM system is rebooting.</li>
+<li>0x0080: <code>HasPose</code> - The SLAM system has obtained pose.</li>
+<li>0x0100: <code>LostPose</code> - The SLAM system has lost pose after having obtained it.</li>
+<li>0x0200: <code>Exporting_Map</code> - The SLAM system is exporting a map after mapping is complete.</li>
+<li>0x0400: <code>Error</code> - There is an error with the SLAM system or with the depth sensor.</li>
+<li>0x0800: <code>Error_Sensor_Not_Connected</code> - The depth sensor is not connected.</li>
+<li>0x1000: <code>Error_Sensor_No_Permission</code> - The system does not have permission to use the depth sensor.</li>
+<li>0x2000: <code>Error_Sensor_Cant_Open</code> - The system cannot open the depth sensor for communication.</li>
+<li>0x4000: <code>Error_Error_Power_Down_Robot</code> - Unrecoverable error. Power down the robot and restart.</li>
+<li>0x8000: <code>Streaming</code> - The SLAM system is streaming.</li>
+</ul>
+</li>
+<li><code>statusList</code> (array) - A list of the string values that describe the current status of the SLAM system. Can contain any of the values represented by the <code>status</code> field.</li>
+<li><code>runMode</code> (string) - Current status of the navigation system. Possible values are:<ul>
+<li><code>Uninitialized</code></li>
+<li><code>Tracking</code></li>
+<li><code>Exploring</code></li>
+<li><code>Relocalizing</code></li>
+<li><code>Paused</code></li>
+<li><code>ExportingScene</code></li>
+<li><code>NeedMoreMotionToInitMap</code></li>
+<li><code>NotAvailable</code></li>
+</ul>
+</li>
+<li><code>sensorStatus</code> (string) - Current status of the depth sensor sensor. Possible values are:<ul>
+<li><code>Uninitialized</code></li>
+<li><code>Connected</code></li>
+<li><code>Booting</code></li>
+<li><code>Ready</code></li>
+<li><code>Disconnected</code></li>
+<li><code>Error</code></li>
+<li><code>USBError</code></li>
+<li><code>LowPowerMode</code></li>
+<li><code>RecoveryMode</code></li>
+<li><code>ProdDataCorrupt</code></li>
+<li><code>CalibMissingOrInvalid</code></li>
+<li><code>FWVersionMismatch</code></li>
+<li><code>FWUpdate</code></li>
+<li><code>FWUpdateComplete</code></li>
+<li><code>FWUpdateFailed</code></li>
+<li><code>FWCorrupt</code></li>
+<li><code>EndOfFile</code></li>
+<li><code>USBDriverNotInstalled</code></li>
+<li><code>Streaming</code></li>
+</ul>
+</li>
+</ul>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> We suggest primarily using the values of <code>Status</code>/<code>StatusList</code> when coding SLAM functionality in your skills and robot applications, and only using the <code>SensorStatus</code> and <code>RunMode</code> values as supplemental information if needed or for debugging purposes.
+</p></div><p></p>
+<p>Example <code>SlamStatus</code> event message:</p>
+<pre><code class="lang-JSON">{
+    "eventName":"SlamStatus",
+    "message": {
+        "slamStatus": {
+            "runMode":"Uninitialized",
+            "sensorStatus":"Connected",
+            "status":2,
+            "statusList":["Ready"]
+        }
+    }
+}
+</code></pre>
+<h2 id="sourcetrackdatamessage">SourceTrackDataMessage<a class="header-permalinks" href="#sourcetrackdatamessage"><i class="ion-link"></i></a></h2><p>The <code>SourceTrackDataMessage</code> named object provides information about the location and volume of the noise or spoken voice that Misty can detect.</p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> Misty only sends audio localization event messages when she is actively recording audio. When using audio localization data in your skills, you need to call the <code>misty.StartRecordingAudio()</code> method in order to receive <code>SourceTrackDataMessage</code> or <code>SourceFocusConfigMessage</code> event messages.</p>
+<p>This event type is currently in <strong>Beta</strong>, and related hardware, firmware, or software is still under development. Feel free to use this event type, but recognize that it may behave unpredictably at this time.
+</p></div><p></p>
+<p>Audio localization messages include the following data:</p>
+<ul>
+<li><code>DegreeOfArrivalNoise</code>: An array where each element is a value between 0-360 that indicates the angle of arrival for a noise that Misty detects. This array can contain the degree of arrival noise for up to three unique sounds. Each value in this array represents the degree of arrival for a single sound.</li>
+<li><code>DegreeOfArrivalSpeech</code>: A value between 0-360 that indicates the angle relative to Misty where she detected the loudest voice.</li>
+<li><code>TimeOffset</code>: The time (in milliseconds) that Misty captured the audio sample relative to the start time of the audio recording. Misty records samples at roughly 20hz, or once every 50ms.</li>
+<li><code>VoiceActivityPolar</code>: A 360 element array where each element is a value between 0 and 255 that indicates the level of sound activity detected at a particular angle. The higher the value, the more voice activity detected.</li>
+<li><code>VoiceActivitySectors</code>: A four element array of boolean values indicating whether Misty detected voice activity in a particular sector. Each sector represents a 90 degree wedge of the area surrounding Misty. The front-facing wedge is offset, with Misty's face pointing toward the 45 degree angle down its center.</li>
+</ul>
+<p>Sample <code>SourceTrackDataMessage</code> response data:</p>
+<pre><code class="lang-JSON">{
+  "eventName": "SourceTrackDataMessageEvent",
+  "message": {
+    "degreeOfArrivalNoise": [90],
+    "degreeOfArrivalSpeech": 360,
+    "timeOffset": 4925,
+    "voiceActivityPolar": [6,6,6,5,5,5,5,5,5,4,4,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,4,4,4,3,3,2,2,3,5,6,5,4,4,4,5,6,6,6,7,7,8,8,9,9,9,9,9,10,10,10,10,10,10,9,9,9,10,10,10,9,8,7,7,7,7,8,8,8,7,7,7,6,6,5,5,5,4,4,4,4,3,3,3,2,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,2,3,3,4,4,5,5,6,6,7,8,8,8,9,9,9,9,9,9,9,9,8,8,8,8,7,7,6,6,5,5,3,2,1,3,4,4,3,2,1,1,2,3,3,4,4,4,4,3,2,1,2,2,3,3,4,4,3,3,2,4,5,5,4,4,4,5,5,5,6,5,5,5,5,4,4,5,5,4,3,3,4,5,5,5,4,4,4,4,4,5,5,4,3,2,1,1,1,1,1,2,2,2,3,3,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,4,4,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,3,3,4,5,5,5,6,6,7,8,8,8,8,8,8,8,9,9,9,9,8,8,8,7,7,7,7,7,6,6,6,6,6,6,6,6,6,6],
+    "voiceActivitySectors": [false, false,false, false ]
+  }
+}
+</code></pre>
+<h2 id="sourcefocusconfigmessage">SourceFocusConfigMessage<a class="header-permalinks" href="#sourcefocusconfigmessage"><i class="ion-link"></i></a></h2><p>The <code>SourceFocusConfigMessage</code> named object provides meta information about the configuration of audio localization data. The system only sends this message once, when Misty starts recording audio.</p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> Misty only sends <code>SourceFocusConfigMessage</code> data once, when she starts recording audio. When using audio localization data in your skills, you need to call the <code>misty.StartRecordingAudio()</code> method in order to receive <code>SourceTrackDataMessage</code> or <code>SourceFocusConfigMessage</code> event messages.</p>
+<p>This event type is currently in <strong>Beta</strong>, and related hardware, firmware, or software is still under development. Feel free to use this event type, but recognize that it may behave unpredictably at this time.
+</p></div><p></p>
+<ul>
+<li><code>GainStep</code>: A value that indicates the spatial gain applied to the sector where Misty detects a voice. You can safely ignore this value.</li>
+<li><code>SectorsEnabled</code>: A four element array of boolean values that indicate whether audio localization is enabled for a given sector. At this time, all sectors are enabled be default and cannot be disabled.</li>
+<li><code>SectorStartAngles</code>: A four element array of integer values between 0 - 360 indicating the angle bounding the start of a given sector. Each sector represents a 90 degree wedge of the environment that surrounds Misty. Each sector stops at the angle where the next sector begins. These sectors correspond to the <code>VoiceActivitySectors</code> array in the <code>SourceTrackDataMessage</code> named object.</li>
+</ul>
+<p>Sample <code>SourceFocusConfigMessage</code> response data:</p>
+<pre><code class="lang-JSON">{
+  "eventName": "SourceFocusConfigMessageEvent",
+  "message": {
+    "gainStep": 65535,
+    "sectorsEnabled": [true, true, true, true],
+    "sectorStartAngles": [135,45,315,225]
+  }
+}
+</code></pre>
+<h2 id="timeofflight">TimeOfFlight<a class="header-permalinks" href="#timeofflight"><i class="ion-link"></i></a></h2><p>Misty has four edge and four range time-of-flight sensors that provide a single stream of raw proximity data. These sensors send <code>TimeOfFlight</code> messages that you can subscribe to in your skills and robot applications. </p>
+<p></p><div class="boxed noteBox"><p>
+You can change how frequently a <code>TimeOfFlight</code> subscription gets messages by adjusting the value of the <code>debounceMS</code> parameter when you subscribe to the WebSocket connection or call the <a href="/misty-ii/javascript-sdk/api-reference/#misty-registerevent"><code>misty.RegisterEvent()</code></a> method in Misty's JavaScript API.
+</p></div><p></p>
+<p>A <code>TimeOfFlight</code> event message includes the following key/value pairs:</p>
+<ul>
+<li><code>created</code> - A timestamp that tells us when the system created the message.</li>
+<li><code>distanceInMeters</code> - The distance (in meters) of the nearest object the sensor detects.</li>
+<li><code>sensorId</code> - An identification string associated with a specific time-of-flight sensor. In <code>TimeOfFlight</code> events, the value of <code>sensorId</code> tells us which sensor sent the message. See the <a href="./#time-of-flight-sensor-details">Time-of-Flight Sensor Details</a> table for a list of <code>sensorId</code> values and their corresponding time-of-flight sensors.</li>
+<li><code>status</code> - A status code from the sensor that provides additional context for the distance reading in a <code>TimeOfFlight</code> event message. At the macro level, <code>0</code> indicates the distance reading is valid; <code>100</code> codes are warnings (the system has low confidence in the value); and <code>200</code> codes are errors (the distance value is not reliable and should probably be discarded). Status codes are different for edge and range time-of-flight sensors. For a list of status codes and their descriptions, see the <a href="./#time-of-flight-status-codes">Time-of-Flight Status Codes</a> section below.</li>
+<li><code>type</code> - A string value indicating whether this message comes from a <code>Range</code> or <code>Edge</code> time-of-flight sensor. See the <a href="./#time-of-flight-sensor-details">Time-of-Flight Sensor Details</a> table for a list of which sensors belong in each category.</li>
+</ul>
+<pre><code class="lang-JSON">// Example message from right front ToF sensor
+{
+  "eventName": "TimeOfFlight",
+  "message": {
+    "created": "2019-08-22T20:29:30.7786174Z",
+    "distanceInMeters": 0.19,
+    "sensorId": "toffr",
+    "status": 0,
+    "type": "Range"
+  }
+}
+</code></pre>
+<h3 id="time-of-flight-sensor-details">Time-of-Flight Sensor Details<a class="header-permalinks" href="#time-of-flight-sensor-details"><i class="ion-link"></i></a></h3><div class="table-scrollable"><table><thead><tr>
+<th><strong>Sensor Position</strong></th>
+<th><strong><code>sensorName</code></strong></th>
+<th><strong><code>sensorId</code></strong></th>
+<th><strong><code>type</code></strong></th>
+</tr>
+</thead><tbody><tr>
+<td>Right Front</td>
+<td><code>toF_Right</code></td>
+<td><code>toffr</code></td>
+<td><code>Range</code></td>
+</tr>
+<tr>
+<td>Left Front</td>
+<td><code>toF_Left</code></td>
+<td><code>toffl</code></td>
+<td><code>Range</code></td>
+</tr>
+<tr>
+<td>Center Front</td>
+<td><code>toF_Center</code></td>
+<td><code>toffc</code></td>
+<td><code>Range</code></td>
+</tr>
+<tr>
+<td>Back</td>
+<td><code>toF_Back</code></td>
+<td><code>tofr</code></td>
+<td><code>Range</code></td>
+</tr>
+<tr>
+<td>Downward Front Right</td>
+<td><code>toF_DownFrontRight</code></td>
+<td><code>tofdfr</code></td>
+<td><code>Edge</code></td>
+</tr>
+<tr>
+<td>Downward Front Left</td>
+<td><code>toF_DownFrontLeft</code></td>
+<td><code>tofdfl</code></td>
+<td><code>Edge</code></td>
+</tr>
+<tr>
+<td>Downward Back Right</td>
+<td><code>toF_DownBackRight</code></td>
+<td><code>tofdrr</code></td>
+<td><code>Edge</code></td>
+</tr>
+<tr>
+<td>Downward Back Left</td>
+<td><code>toF_DownBackLeft</code></td>
+<td><code>tofdrl</code></td>
+<td><code>Edge</code></td>
+</tr>
+</tbody></table></div><h3 id="time-of-flight-status-codes">Time-of-Flight Status Codes<a class="header-permalinks" href="#time-of-flight-status-codes"><i class="ion-link"></i></a></h3><p><strong>Range Sensor Status Codes</strong></p>
+<p>Event messages from Misty's range time-of-flight sensors include one of the following status codes:</p>
+<div class="table-scrollable"><table><thead><tr>
+<th><strong>Status Code</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead><tbody><tr>
+<td><code>-1</code></td>
+<td><code>Unknown</code></td>
+<td>An unknown error. The system uses this code as a catch-all for errors that do not map to one of the codes below.</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td><code>RangeValid</code></td>
+<td>The distance reading is valid. The sensor received good data, and its readings fell within the thresholds set for both sigma and signal.</td>
+</tr>
+<tr>
+<td><code>101</code></td>
+<td><code>SigmaFail</code></td>
+<td>The distance reading may not be accurate. The system sends this code when the standard deviation (sigma) of the sensor's readings is higher than the threshold set in Misty's firmware. You are more likely to see this code when Misty is operating in bright environments, or when the sensor points toward a flat surface at an angle.</td>
+</tr>
+<tr>
+<td><code>102</code></td>
+<td><code>SignalFail</code></td>
+<td>The distance reading may not be accurate. The system sends this code when the return signal is too weak for the sensor to provide good data. You are more likely to see this code when the target of a sensor is too far away, not reflective enough, or too small.</td>
+</tr>
+<tr>
+<td><code>103</code></td>
+<td><code>ROIOutOfBounds</code></td>
+<td>Each range time-of-flight sensor is comprised of a 16x16 array of detectors. The region of interest for each sensor can be adjusted to allow a different area of the sensor to read return signals. This allows us to change which direction the sensor "sees". (This is similar to the way that you can move your eyes to look in different directions, albeit with more restricted movement.) If the chosen region of interest is outside the 16x16 array of detectors, the system returns a distance value of 8191 with a <code>103</code> status code. The region of interest is currently set internally on Misty's system and cannot be adjusted. You will not see this error until the ability to change the region of interest is exposed.</td>
+</tr>
+<tr>
+<td><code>104</code></td>
+<td><code>OutOfBounds</code></td>
+<td>The distance reading may not be accurate. The system sends this code when the sensor sees a target further away than 1.2 meters. While Misty's range time-of-flight sensors <strong>do</strong> return distance values for targets further away than 1.2 meters, the sensor's proximity calculations are less accurate when the target is outside this range. Bear this mind when using distance values that come back with this status code.</td>
+</tr>
+<tr>
+<td><code>207</code></td>
+<td><code>WrapTargetFail</code></td>
+<td>The distance reading is not accurate due to range aliasing. This can happen when the sensor's target is highly reflective and outside the sensor's measurable range. This error can cause the sensor to read the distance of an object further than ~1.3 meters as being within range of the sensor. When you receive a <code>207</code> error, you can calculate the approximate distance of the target by adding 1.3 meters to the measured distance that Misty returns.</td>
+</tr>
+</tbody></table></div><p><strong>Edge Sensor Status Codes</strong></p>
+<p>Event messages from Misty's range time-of-flight sensors include one of the following status codes:</p>
+<div class="table-scrollable"><table><thead><tr>
+<th><strong>Status Code</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Meaning</strong></th>
+</tr>
+</thead><tbody><tr>
+<td><code>-1</code></td>
+<td><code>Unknown</code></td>
+<td>An unknown error. The system uses this code as a catch-all for errors that do not map to one of the codes below.</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td><code>RangeValid</code></td>
+<td>The distance reading is valid. The sensor received good data, and its readings fell within the thresholds set for both sigma and signal.</td>
+</tr>
+<tr>
+<td><code>201</code></td>
+<td><code>HardwareFail</code></td>
+<td>The sensor failed to initialize due to an internal error. Because the system automatically attempts to reinitialize the sensors, and because these sensors do not send messages until they are fully initialized, it is unlikely that you will see this code. Errors <code>201</code> - <code>205</code> only happen at time of initialization.</td>
+</tr>
+<tr>
+<td><code>202</code></td>
+<td><code>HardwareFail2</code></td>
+<td>The sensor failed to initialize due to an internal error. Because the system automatically attempts to reinitialize the sensors, and because these sensors do not send messages until they are fully initialized, it is unlikely that you will see this code. Errors <code>201</code> - <code>205</code> only happen at time of initialization.</td>
+</tr>
+<tr>
+<td><code>203</code></td>
+<td><code>HardwareFail3</code></td>
+<td>The sensor failed to initialize due to an internal error. Because the system automatically attempts to reinitialize the sensors, and because these sensors do not send messages until they are fully initialized, it is unlikely that you will see this code. Errors <code>201</code> - <code>205</code> only happen at time of initialization.</td>
+</tr>
+<tr>
+<td><code>204</code></td>
+<td><code>HardwareFail4</code></td>
+<td>The sensor failed to initialize due to an internal error. Because the system automatically attempts to reinitialize the sensors, and because these sensors do not send messages until they are fully initialized, it is unlikely that you will see this code. Errors <code>201</code> - <code>205</code> only happen at time of initialization.</td>
+</tr>
+<tr>
+<td><code>205</code></td>
+<td><code>HardwareFail5</code></td>
+<td>The sensor failed to initialize due to an internal error. Because the system automatically attempts to reinitialize the sensors, and because these sensors do not send messages until they are fully initialized, it is unlikely that you will see this code. Errors <code>201</code> - <code>205</code> only happen at time of initialization.</td>
+</tr>
+<tr>
+<td><code>206</code></td>
+<td><code>EarlyConvergence</code></td>
+<td>The sensor has not received a minimum number of return signals within 0.5 milliseconds. When this happens, the sensor cancels measurement to conserve power and returns this status code. You are most likely to see this code when there is nothing in view of the sensor within its range of detection.</td>
+</tr>
+<tr>
+<td><code>207</code></td>
+<td><code>MaxConvergence</code></td>
+<td>The sensor failed to detect a valid target after the maximum amount of time allowed for convergence.</td>
+</tr>
+<tr>
+<td><code>208</code></td>
+<td><code>RangeIgnore</code></td>
+<td>The number of returned signals is less than the threshold set in Misty's firmware, AND the measured distance of any returned signals is less than the crosstalk distance (7 mm) set in the firmware. You should only see this message if there are no solid objects within the sensor's range, causing the sensor to read its protective lens as the strongest signal. You might see this error if the sensor is over an edge, picked up in the air, or if Misty is tipped over.</td>
+</tr>
+<tr>
+<td><code>211</code></td>
+<td><code>Signal-To-NoiseRatioFail</code></td>
+<td>Too much ambient light is washing out the sensor's returned signals. You are most likely to see this error when shining a light directly into the sensor.</td>
+</tr>
+<tr>
+<td><code>212</code></td>
+<td><code>RawRangeUnderflow</code></td>
+<td>The system has produced a negative value for the proximity of the nearest target. This typically happens when the target is closer than the offset distance the system uses in proximity calculations (or, in other words, if the target is closer than 10mm). You might see this error if you place your finger on the sensor's lens, or when the sensor is measuring the distance of bright target between 1.2 and 1.5 meters away.</td>
+</tr>
+<tr>
+<td><code>213</code></td>
+<td><code>OutOfBounds</code></td>
+<td>The sensor's target is too far away and the system cannot calculate an accurate distance value. You should only see this status when the sensor's target is more than 200mm away from the sensor.</td>
+</tr>
+<tr>
+<td><code>214</code></td>
+<td><code>RangingUnderflow</code></td>
+<td>The system has produced a negative value for the proximity of the nearest target. This typically happens when the target is closer than the offset distance the system uses in proximity calculations (or, in other words, if the target is closer than 10mm). You might see this error if you place your finger on the sensor's lens, or when the sensor is measuring the distance of bright target between 1.2 and 1.5 meters away.</td>
+</tr>
+</tbody></table></div><h2 id="touchsensor">TouchSensor<a class="header-permalinks" href="#touchsensor"><i class="ion-link"></i></a></h2><p>The <code>TouchSensor</code> data stream sends information each time one of the capacitive touch sensors on Misty's head is touched or released. In the <code>TouchSensor</code> data object, the value of the <code>sensorName</code> property is one of the following strings, indicating which sensor triggered the event:</p>
+<ul>
+<li><code>CapTouch_Chin</code></li>
+<li><code>CapTouch_HeadLeft</code></li>
+<li><code>CapTouch_HeadRight</code></li>
+<li><code>CapTouch_HeadBack</code></li>
+<li><code>CapTouch_HeadFront</code></li>
+<li><code>CapTouch_Scruff</code></li>
+</ul>
+<p>The value of the <code>sensorPosition</code> property is a string indicating the location of the sensor. This value corresponds with the name of the sensor that triggered the event (i.e. when the <code>CapTouch_Chin</code> sensor triggers the event, the value of <code>sensorPosition</code> is <code>Chin</code>). The value of <code>isContacted</code> is a boolean indicating whether the sensor was touched (<code>true</code>) or released (<code>false</code>). The <code>TouchSensor</code> data object also provides “pose” information about Misty at the time of the event. For more about pose, see the <a href="/tools-&amp;-apps/web-based-tools/command-center/#navigation">mapping section of the Command Center documentation</a>.</p>
+<p>Sample <code>TouchSensor</code> data:</p>
+<pre><code class="lang-JSON">TouchSensor{  
+    "eventName":"TouchSensor",
+    "message":{  
+       "created":"2019-01-09T22:55:20.5300385Z",
+       "expiry":"2019-01-09T22:55:21.5300385Z",
+       "isContacted":true,
+       "pose":{  
+          "bearing":1.0303768429594167,
+          "created":"2019-01-09T20:11:03.2951639Z",
+          "distance":0.09899494809418499,
+          "elevation":-0.9409567798080669,
+          "frameId":"RobotHead",
+          "framesProvider":{  
+             "rootFrame":{  
+                "created":"2019-01-09T20:11:03.2013843Z",
+                "id":"RobotBaseCenter",
+                "isStatic":true,
+                "linkFromParent":{  
+                   "isStatic":true,
+                   "parentFrameId":"",
+                   "transformFromParent":{  
+                      "bearing":0,
+                      "distance":0,
+                      "elevation":0,
+                      "pitch":0,
+                      "quaternion":{  
+                         "isIdentity":true,
+                         "w":1,
+                         "x":0,
+                         "y":0,
+                         "z":0
+                      },
+                      "roll":0,
+                      "x":0,
+                      "y":0,
+                      "yaw":0,
+                      "z":0
+                   },
+                   "transformToParent":{  
+                      "bearing":3.141592653589793,
+                      "distance":0,
+                      "elevation":0,
+                      "pitch":0,
+                      "quaternion":{  
+                         "isIdentity":true,
+                         "w":1,
+                         "x":0,
+                         "y":0,
+                         "z":0
+                      },
+                      "roll":0,
+                      "x":0,
+                      "y":0,
+                      "yaw":0,
+                      "z":0
+                   }
+                }
+             }
+          },
+          "homogeneousCoordinates":{  
+             "bearing":1.0303768429594167,
+             "distance":0.09899494809418499,
+             "elevation":-0.9409567798080669,
+             "pitch":-1.399999976158142,
+             "quaternion":{  
+                "isIdentity":false,
+                "w":0.7648422,
+                "x":0,
+                "y":-0.64421767,
+                "z":0
+             },
+             "roll":0,
+             "x":0.029999999329447746,
+             "y":0.05000000074505806,
+             "yaw":0,
+             "z":0.07999999821186066
+          },
+          "pitch":-1.399999976158142,
+          "roll":0,
+          "x":0.029999999329447746,
+          "y":0.05000000074505806,
+          "yaw":0,
+          "z":0.07999999821186066
+       },
+       "sensorId":"cap",
+       "sensorName":"CapTouch_HeadLeft",
+       "sensorPosition":"HeadLeft"
+    },
+    "type":"TouchSensor"
+ }
+</code></pre>
+<h2 id="worldstate">WorldState<a class="header-permalinks" href="#worldstate"><i class="ion-link"></i></a></h2><p>The <code>WorldState</code> named object exists to provide information about things Misty perceives in her environment, including:</p>
+<ul>
+<li>the locations of perceived objects</li>
+<li>the times they were perceived</li>
+</ul>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> The <code>WorldState</code> event type is currently in <strong>Alpha</strong> and can't be used for much at this time. Many of the properties Misty sends in <code>WorldState</code> event messages are reserved for future use, and may have <code>null</code> or invalid values.
+</p></div><p></p>
+<pre><code class="lang-JSON">{
+  "eventName": "WorldState",
+  "message": {
+    "characteristics": [],
+    "objects": [
+      {
+        "class": null,
+        "id": 1,
+        "individual": null,
+        "isSensible": true,
+        "location": {
+          "bearing": -0.5584253393087596,
+          "bearingThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "distance": 0.15293597670901554,
+          "distanceThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "elevation": 0.38783942844582714,
+          "elevationThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "pose": {
+            "bearing": -0.5584253393087596,
+            "created": "2019-09-09T19:15:10.7842637Z",
+            "distance": 0.15293597670901554,
+            "elevation": 0.38783942844582714,
+            "frameId": "WorldOrigin",
+            "framesProvider": {
+              "rootFrame": {
+                "created": "2019-09-09T18:30:21.4398142Z",
+                "id": "RobotBaseCenter",
+                "isStatic": true,
+                "linkFromParent": {
+                  "isStatic": true,
+                  "parentFrameId": "",
+                  "transformFromParent": {
+                    "bearing": 0,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "transformToParent": {
+                    "bearing": 3.141592653589793,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  }
+                }
+              }
+            },
+            "homogeneousCoordinates": {
+              "bearing": -0.5584253393087596,
+              "distance": 0.15293597670901554,
+              "elevation": 0.38783942844582714,
+              "pitch": 1.5696512460708618,
+              "quaternion": {
+                "isIdentity": false,
+                "w": 0.7075245,
+                "x": -0.0000965454237,
+                "y": 0.7066889,
+                "z": -0.0000882303138
+              },
+              "roll": -0.21764267965049405,
+              "x": 0.12007024884223938,
+              "y": -0.0750148594379425,
+              "yaw": -0.21763145560213495,
+              "z": -0.05783873423933983
+            },
+            "pitch": 1.5696512460708618,
+            "roll": -0.21764267965049405,
+            "x": 0.12007024884223938,
+            "y": -0.0750148594379425,
+            "yaw": -0.21763145560213495,
+            "z": -0.05783873423933983
+          },
+          "unitOfMeasure": "None"
+        },
+        "statistics": {
+          "durationContinuouslyPerceived": "00:00:00",
+          "firstPerceived": "2019-09-09T19:15:08.9239249Z",
+          "mostRecentlyPerceived": "2019-09-09T19:15:10.7842637Z"
+        },
+        "timeStamp": "2019-09-09T19:15:10.7842637Z"
+      },
+      {
+        "class": null,
+        "id": 2,
+        "individual": null,
+        "isSensible": true,
+        "location": {
+          "bearing": -2.4473488655806275,
+          "bearingThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "distance": 0.1320835387735192,
+          "distanceThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "elevation": -0.4793232003535818,
+          "elevationThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "pose": {
+            "bearing": -2.4473488655806275,
+            "created": "2019-09-09T19:15:10.7842637Z",
+            "distance": 0.1320835387735192,
+            "elevation": -0.4793232003535818,
+            "frameId": "WorldOrigin",
+            "framesProvider": {
+              "rootFrame": {
+                "created": "2019-09-09T18:30:21.4398142Z",
+                "id": "RobotBaseCenter",
+                "isStatic": true,
+                "linkFromParent": {
+                  "isStatic": true,
+                  "parentFrameId": "",
+                  "transformFromParent": {
+                    "bearing": 0,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "transformToParent": {
+                    "bearing": 3.141592653589793,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  }
+                }
+              }
+            },
+            "homogeneousCoordinates": {
+              "bearing": -2.4473488655806275,
+              "distance": 0.1320835387735192,
+              "elevation": -0.4793232003535818,
+              "pitch": -1.5696512460708618,
+              "quaternion": {
+                "isIdentity": false,
+                "w": 0.00008819939,
+                "x": 0.7066889,
+                "y": 0.00009651453,
+                "z": 0.7075245
+              },
+              "roll": 0.21757214098211117,
+              "x": -0.09007161110639572,
+              "y": -0.07498423755168915,
+              "yaw": 2.924042367538678,
+              "z": 0.06091412156820297
+            },
+            "pitch": -1.5696512460708618,
+            "roll": 0.21757214098211117,
+            "x": -0.09007161110639572,
+            "y": -0.07498423755168915,
+            "yaw": 2.924042367538678,
+            "z": 0.06091412156820297
+          },
+          "unitOfMeasure": "None"
+        },
+        "statistics": {
+          "durationContinuouslyPerceived": "00:00:00",
+          "firstPerceived": "2019-09-09T19:15:08.9239249Z",
+          "mostRecentlyPerceived": "2019-09-09T19:15:10.7842637Z"
+        },
+        "timeStamp": "2019-09-09T19:15:10.7842637Z"
+      },
+      {
+        "class": null,
+        "id": 3,
+        "individual": null,
+        "isSensible": true,
+        "location": {
+          "bearing": 0.5579833753366954,
+          "bearingThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "distance": 0.17502626966973778,
+          "distanceThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "elevation": 0.6283228116298827,
+          "elevationThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "pose": {
+            "bearing": 0.5579833753366954,
+            "created": "2019-09-09T19:15:10.7842637Z",
+            "distance": 0.17502626966973778,
+            "elevation": 0.6283228116298827,
+            "frameId": "WorldOrigin",
+            "framesProvider": {
+              "rootFrame": {
+                "created": "2019-09-09T18:30:21.4398142Z",
+                "id": "RobotBaseCenter",
+                "isStatic": true,
+                "linkFromParent": {
+                  "isStatic": true,
+                  "parentFrameId": "",
+                  "transformFromParent": {
+                    "bearing": 0,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "transformToParent": {
+                    "bearing": 3.141592653589793,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  }
+                }
+              }
+            },
+            "homogeneousCoordinates": {
+              "bearing": 0.5579833753366954,
+              "distance": 0.17502626966973778,
+              "elevation": 0.6283228116298827,
+              "pitch": 1.5696512460708618,
+              "quaternion": {
+                "isIdentity": false,
+                "w": 0.7075245,
+                "x": -0.0000965454237,
+                "y": 0.7066889,
+                "z": -0.0000882303138
+              },
+              "roll": -0.21764267965049405,
+              "x": 0.12012173235416412,
+              "y": 0.07497323304414749,
+              "yaw": -0.21763145560213495,
+              "z": -0.10287846624851227
+            },
+            "pitch": 1.5696512460708618,
+            "roll": -0.21764267965049405,
+            "x": 0.12012173235416412,
+            "y": 0.07497323304414749,
+            "yaw": -0.21763145560213495,
+            "z": -0.10287846624851227
+          },
+          "unitOfMeasure": "None"
+        },
+        "statistics": {
+          "durationContinuouslyPerceived": "00:00:00",
+          "firstPerceived": "2019-09-09T19:15:08.9239249Z",
+          "mostRecentlyPerceived": "2019-09-09T19:15:10.7842637Z"
+        },
+        "timeStamp": "2019-09-09T19:15:10.7842637Z"
+      },
+      {
+        "class": null,
+        "id": 4,
+        "individual": null,
+        "isSensible": true,
+        "location": {
+          "bearing": -3.1415883669408133,
+          "bearingThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "distance": 0.4359997212269757,
+          "distanceThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "elevation": 0.0011690930720143118,
+          "elevationThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "pose": {
+            "bearing": -3.1415883669408133,
+            "created": "2019-09-09T19:15:10.7358941Z",
+            "distance": 0.4359997212269757,
+            "elevation": 0.0011690930720143118,
+            "frameId": "WorldOrigin",
+            "framesProvider": {
+              "rootFrame": {
+                "created": "2019-09-09T18:30:21.4398142Z",
+                "id": "RobotBaseCenter",
+                "isStatic": true,
+                "linkFromParent": {
+                  "isStatic": true,
+                  "parentFrameId": "",
+                  "transformFromParent": {
+                    "bearing": 0,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "transformToParent": {
+                    "bearing": 3.141592653589793,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  }
+                }
+              }
+            },
+            "homogeneousCoordinates": {
+              "bearing": -3.1415883669408133,
+              "distance": 0.4359997212269757,
+              "elevation": 0.0011690930720143118,
+              "pitch": 0.0011815604520961642,
+              "quaternion": {
+                "isIdentity": false,
+                "w": -0.00000487849775,
+                "x": -0.000590780866,
+                "y": 0.000133459544,
+                "z": 0.9999998
+              },
+              "roll": 0.00026692497608394846,
+              "x": -0.43599942326545715,
+              "y": -0.0000018689764829105115,
+              "yaw": -3.141582738898105,
+              "z": -0.0005097241373732686
+            },
+            "pitch": 0.0011815604520961642,
+            "roll": 0.00026692497608394846,
+            "x": -0.43599942326545715,
+            "y": -0.0000018689764829105115,
+            "yaw": -3.141582738898105,
+            "z": -0.0005097241373732686
+          },
+          "unitOfMeasure": "None"
+        },
+        "statistics": {
+          "durationContinuouslyPerceived": "00:00:00",
+          "firstPerceived": "2019-09-09T19:14:48.53128Z",
+          "mostRecentlyPerceived": "2019-09-09T19:15:10.7358941Z"
+        },
+        "timeStamp": "2019-09-09T19:15:10.7358941Z"
+      },
+      {
+        "class": null,
+        "id": 5,
+        "individual": null,
+        "isSensible": true,
+        "location": {
+          "bearing": 2.447178387656334,
+          "bearingThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "distance": 0.13446667538055293,
+          "distanceThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "elevation": -0.511962016172321,
+          "elevationThreshold": {
+            "lowerBound": 0,
+            "upperBound": 0
+          },
+          "pose": {
+            "bearing": 2.447178387656334,
+            "created": "2019-09-09T19:15:10.7842637Z",
+            "distance": 0.13446667538055293,
+            "elevation": -0.511962016172321,
+            "frameId": "WorldOrigin",
+            "framesProvider": {
+              "rootFrame": {
+                "created": "2019-09-09T18:30:21.4398142Z",
+                "id": "RobotBaseCenter",
+                "isStatic": true,
+                "linkFromParent": {
+                  "isStatic": true,
+                  "parentFrameId": "",
+                  "transformFromParent": {
+                    "bearing": 0,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  },
+                  "transformToParent": {
+                    "bearing": 3.141592653589793,
+                    "distance": 0,
+                    "elevation": 0,
+                    "pitch": 0,
+                    "quaternion": {
+                      "isIdentity": true,
+                      "w": 1,
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "roll": 0,
+                    "x": 0,
+                    "y": 0,
+                    "yaw": 0,
+                    "z": 0
+                  }
+                }
+              }
+            },
+            "homogeneousCoordinates": {
+              "bearing": 2.447178387656334,
+              "distance": 0.13446667538055293,
+              "elevation": -0.511962016172321,
+              "pitch": -1.5696512460708618,
+              "quaternion": {
+                "isIdentity": false,
+                "w": 0.00008819939,
+                "x": 0.7066889,
+                "y": 0.00009651453,
+                "z": 0.7075245
+              },
+              "roll": 0.21757214098211117,
+              "x": -0.09007984399795532,
+              "y": 0.07501709461212158,
+              "yaw": 2.924042367538678,
+              "z": 0.06587369740009308
+            },
+            "pitch": -1.5696512460708618,
+            "roll": 0.21757214098211117,
+            "x": -0.09007984399795532,
+            "y": 0.07501709461212158,
+            "yaw": 2.924042367538678,
+            "z": 0.06587369740009308
+          },
+          "unitOfMeasure": "None"
+        },
+        "statistics": {
+          "durationContinuouslyPerceived": "00:00:00",
+          "firstPerceived": "2019-09-09T19:15:08.9239249Z",
+          "mostRecentlyPerceived": "2019-09-09T19:15:10.7842637Z"
+        },
+        "timeStamp": "2019-09-09T19:15:10.7842637Z"
+      }
+    ]
+  }
+}
+</code></pre>
+<p><code>WorldState</code> WebSocket messages are sent even if the data has not changed, as the data is sent via timed updates, instead of being triggered by events. The <code>WorldState</code> WebSocket can send data as frequently as every 100ms, though it is set by default to 250ms. To avoid having to handle excess data, you can change the message frequency for the WebSocket with the <code>DebounceMs</code> field, as shown in the <code>lightSocket.js</code> JavaScript helper.</p>
+<div class="code-samples">
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/prettify.js"></script>
+        <script src="/assets/js/lunr.min.js"></script>
+        <script src="/assets/js/docs.js"></script>
+        <script src="/assets/js/prism.js"></script>
+    </div>
+</body>
+</html>

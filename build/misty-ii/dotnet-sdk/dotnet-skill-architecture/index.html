@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="one-columns">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>Misty Docs | .NET Skill Architecture</title>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/images/misty_favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/css/bootstrapiso.min.css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css" media="all"/>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="docs" data-level>
+        <div class="docs-header">
+            <div class="right">
+                <div class="search">
+                    <div class="search-input-wrapper">
+                        <i class="ion-search"></i>
+                        <input class="search-box" type="text" placeholder="Search" value=""/>
+                    </div>
+                    <div class="search-results"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-root">
+            <div class="menubar">
+                <ul class="nav guide-menu">
+<li data-level="1" class="guide-section">
+<h3 class="guide-section-titles">Robot</h3>
+<ul type="1">
+<li class="top-level " data-level="1.1">
+<a href="/misty-ii/robot/misty-ii/">Misty II Overview</a>
+</li>
+<li class="top-level " data-level="1.2">
+<a href="/misty-ii/robot/introduction-to-skills/">Introduction to Skills</a>
+</li>
+<li class="top-level " data-level="1.3">
+<a href="/misty-ii/robot/hardware-extensibility/">Hardware Extensibility</a>
+</li>
+<li class="top-level " data-level="1.4">
+<a href="/misty-ii/robot/misty-backpack-for-arduino/">Misty Backpack for Arduino</a>
+</li>
+<li class="top-level " data-level="1.5">
+<a href="/misty-ii/robot/sensor-data/">Event Types</a>
+</li>
+<li class="top-level " data-level="1.6">
+<a href="/misty-ii/robot/patches/">Patches</a>
+</li>
+<li class="top-level " data-level="1.7">
+<a href="/misty-ii/robot/system-updates/">System Updates</a>
+</li>
+<li class="top-level " data-level="1.8">
+<a href="/misty-ii/robot/troubleshooting-misty-studio-connection/">Troubleshooting Misty Connectivity</a>
+</li>
+</ul>
+</li>
+<li data-level="2" class="guide-section">
+<h3 class="guide-section-titles">Misty Studio</h3>
+<ul type="1">
+<li class="top-level " data-level="2.1">
+<a href="/misty-ii/misty-studio/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="2.2">
+<a href="/misty-ii/misty-studio/basics/">The Basics</a>
+</li>
+<li class="top-level " data-level="2.3">
+<a href="/misty-ii/misty-studio/mapping/">Mapping & Navigation</a>
+</li>
+</ul>
+</li>
+<li data-level="3" class="guide-section">
+<h3 class="guide-section-titles">Blockly</h3>
+<ul type="1">
+<li class="top-level " data-level="3.1">
+<a href="/misty-ii/blockly/overview/">Blockly Overview</a>
+</li>
+</ul>
+</li>
+<li data-level="4" class="guide-section">
+<h3 class="guide-section-titles">Python</h3>
+<ul type="1">
+<li class="top-level " data-level="4.1">
+<a href="/misty-ii/python/overview/">Python Overview</a>
+</li>
+<li class="top-level " data-level="4.2">
+<a href="/misty-ii/python/python-detailed/">Python in Detail</a>
+</li>
+</ul>
+</li>
+<li data-level="5" class="guide-section">
+<h3 class="guide-section-titles">Web API</h3>
+<ul type="1">
+<li class="top-level " data-level="5.1">
+<a href="/misty-ii/web-api/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="5.2">
+<a href="/misty-ii/web-api/api-reference/">API Reference</a>
+</li>
+<li class="top-level " data-level="5.3">
+<a href="/misty-ii/web-api/tutorials/">Tutorials</a>
+</li>
+</ul>
+</li>
+<li data-level="6" class="guide-section">
+<h3 class="guide-section-titles">.NET SDK</h3>
+<ul type="1">
+<li class="top-level " data-level="6.1">
+<a href="/misty-ii/dotnet-sdk/overview/">Overview</a>
+</li>
+<li class="top-level " data-level="6.2">
+<a href="/misty-ii/dotnet-sdk/getting-started/">Getting Started</a>
+</li>
+<li class="top-level " data-level="6.3">
+<a href="/misty-ii/dotnet-sdk/sample-project/">IntroSkills Sample Project</a>
+</li>
+<li class="top-level active" data-level="6.4">
+<a href="/misty-ii/dotnet-sdk/dotnet-skill-architecture/">.NET Skill Architecture</a>
+</li>
+</ul>
+</li>
+<li data-level="7" class="guide-section">
+<h3 class="guide-section-titles">Interaction System</h3>
+<ul type="1">
+<li class="top-level " data-level="7.1">
+<a href="/misty-ii/interaction-system/overview/">Interaction System</a>
+</li>
+</ul>
+</li>
+<li data-level="8" class="guide-section">
+<h3 class="guide-section-titles">Mobile App</h3>
+<ul type="1">
+<li class="top-level " data-level="8.1">
+<a href="/misty-connect/">Misty Connect</a>
+</li>
+</ul>
+</li>
+</ul>
+            </div>
+            <div class="page-body">
+                <div class="content-inner">
+                    <div class="content">
+                        <div class="content">
+<h1 id="-net-skill-architecture">.NET Skill Architecture<a class="header-permalinks" href="#-net-skill-architecture"><i class="ion-link"></i></a></h1><p>This article provides an overview of some of the basic building blocks of a .NET skill. It describes the required elements of your C# skill file, and it provides examples of some of the different ways to perform common tasks in your .NET skill code, such as issuing commands to Misty, getting data from the robot's sensors and events, and handling that data in your code.</p>
+<h2 id="skill-class-members">Skill Class Members<a class="header-permalinks" href="#skill-class-members"><i class="ion-link"></i></a></h2><h3 id="imistyskill"><code>IMistySkill</code><a class="header-permalinks" href="#imistyskill"><i class="ion-link"></i></a></h3><p>Each .NET skill must implement the <code>IMistySkill</code> interface. This interface loads the connection between Misty and the background task that runs the skill code, sets the name of the skill as it appears in the Skill Runner web page, and defines what happens when the skill starts and stops.</p>
+<pre><code class="lang-csharp">namespace MySkill
+{
+    public class MySkill : IMistySkill
+    {
+        // Insert skill code here
+    }
+}
+</code></pre>
+<h3 id="irobotmessenger"><code>IRobotMessenger</code><a class="header-permalinks" href="#irobotmessenger"><i class="ion-link"></i></a></h3><p>Within the skill class, you must also instantiate a variable to hold the <code>IRobotMessenger</code> interface. We use this interface to issue commands to the robot from our .NET skill code.</p>
+<pre><code class="lang-csharp">// Instantiate a local variable to hold the Misty Robot interface. In
+// this case we use _misty, but you can call it whatever you like.
+private IRobotMessenger _misty
+</code></pre>
+<h3 id="nativerobotskill"><code>NativeRobotSkill</code><a class="header-permalinks" href="#nativerobotskill"><i class="ion-link"></i></a></h3><p>Each .NET skill must also implement a new <code>NativeRobotSkill</code>. The constructor for this class requires two parameters:</p>
+<ul>
+<li>a name for the skill (used in the Skill Runner web page)</li>
+<li>a unique GUID (used by Misty to identify your skill)</li>
+</ul>
+<p>In this example, we pass in a name of <code>MySkill</code> and set a unique GUID.</p>
+<pre><code class="lang-csharp">public NativeRobotSkill Skill { get; private set; } = new NativeRobotSkill("MySkill", "07b7b656-8d3e-4b94-9fa1-c9a010cfdc9b");
+</code></pre>
+<p>The complete list of required and optional properties for the <code>NativeRobotSkill</code> class includes:</p>
+<ul>
+<li><code>AllowedCleanupTimeInMs</code> (uint) - Optional. The amount of time given to perform cleanup tasks when a skill is cancelled or times out. Depending on this value, there may be some delay before you can restart a skill after it cancels or times out. Defaults to 2000 milliseconds. Maximum value is 10000 milliseconds.</li>
+<li><code>UniqueId</code> (Guid) - Required. The unique GUID that Misty uses to identify your skill.</li>
+<li><code>Name</code> (string) - Required. The name of the skill. Appears in the Skill Runner web page.</li>
+<li><code>Description</code> (string) - Optional. A description of your skill.</li>
+<li><code>BroadcastMode</code> (BroadcastMode) - Optional. Configures the contents and frequency of messages Misty sends to <a href="/misty-ii/robot/sensor-data/#skilldata"><code>SkillData</code></a> WebSocket listeners.<ul>
+<li><code>Off</code> - The skill does not send <code>SkillData</code> messages. This is the default setting.</li>
+<li><code>Debug</code> - The skill sends error and debug messages to <code>SkillData</code> listeners.</li>
+<li><code>Verbose</code> - In addition to error and debug messages, the skill sends a message to <code>SkillData</code> listeners for each command that Misty receives.</li>
+</ul>
+</li>
+<li><code>StartupRules</code> (<code>IList&lt;NativeStartupRule&gt;</code>) - Optional. Configures how a skill can start. The following rules are currently implemented:<ul>
+<li><code>Manual</code> - Allows a user to start the skill from the Skill Runner web page or by sending a request to the <a href="/misty-ii/rest-api/api-reference/#runskill"><code>RunSkill</code></a> endpoint in Misty's REST API. By default, all skills are implemented with the Manual startup rule.</li>
+<li><code>Startup</code> - Configures the skill to start as soon as Misty boots up. <strong>Note:</strong> Misty runs <strong>all</strong> skills set to run on startup when she boots up. </li>
+</ul>
+</li>
+<li><code>TimeoutInSeconds</code> (int) - Optional. The number of seconds a skill runs before it times out. Defaults to 600 seconds (or 10 minutes).</li>
+<li><code>SkillStorageLifetime</code> (<code>SkillStorageLifetime</code>) - Determines how long the system saves the shared data this skill creates.<ul>
+<li><code>Skill</code> - The data clears when the skill stops running.</li>
+<li><code>Reboot</code> - The data clears the next time Misty reboots (default).</li>
+<li><code>LongTerm</code> - The data persists across reboots and remains available until removed from the robot with the <code>DeleteSharedData</code> (.NET) or <code>misty.Remove()</code> (JavaScript) command.</li>
+</ul>
+</li>
+<li><code>ReadPermissions</code> (<code>IList&lt;string&gt;</code>) - A list of <code>UniqueId</code>s for each skill that is allowed to read the shared data this skill creates. If empty, any skill can read this skill's shared data. If an empty Guid, no outside skills can read this skill's shared data. If the list includes one or more <code>UniqueId</code>s, only those skills (and this one) can read this skill's shared data. </li>
+<li><code>WritePermissions</code> (<code>IList&lt;string&gt;</code>) - A list of <code>UniqueId</code>s for each skill that is allowed to create, update, and remove shared data associated with this skill. If empty, any skill can write to this skill's shared data. If an empty Guid, no outside skills can write to this skill's shared data. If the list includes one or more <code>UniqueId</code>s, only those skills (and this one) can write to this skill's shared data. </li>
+<li><code>StartPermissions</code> (<code>IList&lt;string&gt;</code>) - A list of <code>UniqueId</code>s for each skill that is allowed to start or cancel this skill. If empty, any skill can start or cancel this skill. If an empty Guid, no skill can start or cancel this skill. If the list includes one or more <code>UniqueId</code>s, only those skills (and this one) can start or stop this skill.</li>
+<li><code>TriggerPermissions</code> (<code>IList&lt;string&gt;</code>) - A list of <code>UniqueId</code>s for each skill that is allowed to trigger user events in this skill. If empty, all skills can trigger events in this skill. If an empty Guid, only this skill can trigger user events within itself. If the array contains one or more <code>UniqueId</code>s, only those skills (and this skill) can trigger user events within this skill.</li>
+</ul>
+<h3 id="loadrobotconnection"><code>LoadRobotConnection</code><a class="header-permalinks" href="#loadrobotconnection"><i class="ion-link"></i></a></h3><p>Each .NET skill must also call the <code>LoadRobotConnection()</code> method. This method configures the robot messenger interface when the skill starts. For example:</p>
+<pre><code class="lang-csharp">public void LoadRobotConnection(IRobotMessenger robotInterface)
+{
+    _misty = robotInterface;
+}
+</code></pre>
+<h3 id="onstart"><code>OnStart</code><a class="header-permalinks" href="#onstart"><i class="ion-link"></i></a></h3><p>The <code>OnStart()</code> method includes the code that runs when your background task receives a message from the robot or a user to start the skill (for example, when you send a request to start the skill from the Skill Runner web page). In many cases, the majority of your skill code exists inside the body of the <code>OnStart()</code> method.</p>
+<pre><code class="lang-csharp">public void OnStart(object sender, IDictionary&lt;string, object&gt; parameters)
+{
+    // Your skill code goes here!
+    _misty.ChangeLED(0, 255, 0) // Green means start!
+}
+</code></pre>
+<p></p><div class="boxed tipBox"><p>
+<strong>Tip:</strong> The <code>OnStart()</code> method accepts an optional <code>parameters</code> argument. This argument populates your skill with the optional payload of key/value pairs that you can send to Misty when you issue a command to start a skill.
+</p></div><p></p>
+<h3 id="oncancel"><code>OnCancel</code><a class="header-permalinks" href="#oncancel"><i class="ion-link"></i></a></h3><p>The <code>OnCancel()</code> method runs when your skill receives a cancellation message (for example, when you send a request to stop the skill from the Skill Runner web page). Use this method to stop any ongoing processes and return the robot to a default state before the skill shuts down. By default, each .NET skill has 2 seconds to clean up any running processes. You can increase or decrease this time time by passing in a custom value for the <code>AllowedCleanupTimeInMs</code> property when you implement the <a href="./#nativerobotskill"><code>NativeRobotSkill</code></a> class.</p>
+<p></p><div class="boxed noteBox"><p>
+<strong>Note:</strong> Any registered events are automatically unregistered when a skill cancels.
+</p></div><p></p>
+<pre><code class="lang-csharp">public void OnCancel(object sender, IDictionary&lt;string, object&gt; parameters)
+{
+    _misty?.SkillLogger.LogInfo($"MySkill : OnCancel called");
+}
+</code></pre>
+<h3 id="ontimeout"><code>OnTimeout</code><a class="header-permalinks" href="#ontimeout"><i class="ion-link"></i></a></h3><p>The <code>OnTimeout()</code> method runs when the skill times out. As with <code>OnCancel()</code>, you can use the <code>OnTimeout()</code> method to return the robot to a default state.</p>
+<pre><code class="lang-csharp">public void OnTimeout(object sender, IDictionary&lt;string, object&gt; parameters)
+{
+    _misty?.SkillLogger.LogInfo($"MySkill : OnTimeout called");
+}
+</code></pre>
+<h3 id="onpause"><code>OnPause</code><a class="header-permalinks" href="#onpause"><i class="ion-link"></i></a></h3><p>The <code>OnPause()</code> method runs when the skill is paused. You can use this method to save any states and other items such that a call to the <code>OnResume()</code> method starts the skill where it left off. After the actions in this method are complete, the robot shuts down the task. If you choose not to use this functionality, you can use the <code>OnPause()</code> method to cancel the skill.</p>
+<pre><code class="lang-csharp">public void OnPause(object sender, IDictionary&lt;string, object&gt; parameters)
+{
+    // In this example, Pause is not implemented by default and
+    // OnPause simply calls OnCancel
+    _misty.SkillLogger.LogVerbose($"MySkill : OnPause called");
+    OnCancel(sender, parameters);
+}
+</code></pre>
+<h3 id="onresume"><code>OnResume</code><a class="header-permalinks" href="#onresume"><i class="ion-link"></i></a></h3><p>The <code>OnResume()</code> method is called when the skill is resumed. This method loads up any states and other items saved when the skill is paused and starts up the task. If you choose not to use this functionality, you can use the <code>OnResume()</code> method to start the skill.</p>
+<pre><code class="lang-csharp">public void OnResume(object sender, IDictionary&lt;string, object&gt; parameters)
+{
+    // In this example, Resume is not implemented by default and it
+    // OnResume simply calls OnStart
+    _misty.SkillLogger.LogVerbose($"MySkill : OnResume called");
+    OnStart(sender, parameters);
+}
+</code></pre>
+<h2 id="command-syntax">Command Syntax<a class="header-permalinks" href="#command-syntax"><i class="ion-link"></i></a></h2><p>There are two main techniques for issuing commands in your skill code. Both techniques require calling commands as methods on the variable that holds Misty's interface.</p>
+<p>The first technique is to issue the command to Misty and continue execution without waiting for response data from the robot. When you use this technique, you have the option to specify a callback function that runs when the command completes.</p>
+<pre><code class="lang-csharp">// Changes Misty's LED to green; calls CommandCallback when complete
+_misty.ChangeLED(0, 255, 0, CommandCallback);
+</code></pre>
+<p>Alternately, you can call an asynchronous version of the command that waits for the response before continuing execution:</p>
+<pre><code class="lang-csharp">// Changes LED to green and waits for response from the robot.
+var result = await _misty.ChangeLEDAsync(0, 255, 0);
+</code></pre>
+<p>This technique can be useful when you need to retrieve data from Misty, such as a list of her image files:</p>
+<pre><code class="lang-csharp">// Gets image list for use in the skill
+_imageList = (await _misty.GetImageListAsync())?.Data;
+</code></pre>
+<p></p><div class="boxed tipBox"><p>
+<strong>Tip:</strong> Until comprehensive documentation on the structure of each class in Misty's .NET SDK libraries is available, use IntelliSense to see the list of available commands and their parameters in Visual Studio.
+</p></div><p></p>
+<h2 id="repeating-actions">Repeating Actions<a class="header-permalinks" href="#repeating-actions"><i class="ion-link"></i></a></h2><p>As you build skills for Misty, you may wish to program her to repeat a set of actions. There are a few patterns you can use to accomplish this. The following examples show two different techniques for coding Misty to change the color of her chest LED on a loop. The first example uses a <code>while</code> loop, and the second uses a timer to trigger a callback to invoke the relevant command. Note that these examples assume the robot interface is assigned to a local variable called <code>_misty</code>.</p>
+<h3 id="using-while-and-wait">Using while and Wait<a class="header-permalinks" href="#using-while-and-wait"><i class="ion-link"></i></a></h3><p>This example shows how to use <code>while</code> to invoke the <code>ChangeLED</code> command on a loop. On each iteration, we call the <code>Wait()</code> method to pause execution for 100 milliseconds. Unless the skill is cancelled while in a paused state, the <code>Wait()</code> method returns a value of <code>true</code>. This means our loop repeats until the skill times out or is cancelled. In the body of the loop, we call the <code>ChangeLED()</code> command, passing in randomized values for the RGB arguments on each iteration. In your .NET skill code, you would place this block in the body of the <code>OnStart()</code> method.</p>
+<pre><code class="lang-csharp">// Instantiates a new random number generator
+Random randomGenerator = new Random();
+
+// Pause for 100 ms. If cancellation token is set during this time,
+// exit Pause and the method. If not, invoke change LED command.
+while (_misty.Wait(100))
+{
+    // Sends Misty a command to change her LED
+    _misty.ChangeLED((uint)randomGenerator.Next(0, 256), (uint)randomGenerator.Next(0, 256), (uint)randomGenerator.Next(0, 256), null);
+}
+</code></pre>
+<h3 id="using-a-timer">Using a Timer<a class="header-permalinks" href="#using-a-timer"><i class="ion-link"></i></a></h3><p>You can also repeat actions by implementing a <code>Timer</code> and triggering a callback function after a set duration. In this example, we create a <code>Timer</code> called <code>_heartbeatTimer</code> as a member of our skill class:</p>
+<pre><code class="lang-csharp">private Timer _heartbeatTimer;
+</code></pre>
+<p>Then, in the body of the <code>OnStart()</code> method, we instantiate the timer. In this example, the timer starts after 1000 milliseconds, then triggers the <code>HeartBeat</code> callback every 250 seconds.</p>
+<pre><code class="lang-csharp">// Instantiate our new Timer as _heartbeatTimer. This example waits one
+// second before starting, then invokes the callback every 250 ms until
+// skill times out or is cancelled
+_heartbeatTimer = new Timer(HeartbeatCallback, null, 1000, 250);
+</code></pre>
+<p>We define the <code>HeartBeatCallback()</code> method as a helper function elsewhere in our skill code. When called, this method issues a <code>Wait()</code> command to see if the skill is cancelled, and then issues a <code>ChangeLED()</code> command with randomized RGB values.</p>
+<pre><code class="lang-csharp">/// Callback method for the heartbeat timer event
+private void HeartbeatCallback(object data)
+{
+    // Calls on Wait and returns if skill is cancelled
+    if(!_misty.Wait(0)) { return; }
+    // Issues a ChangeLED command
+    _misty.ChangeLED((uint)_randomGenerator.Next(0, 256), (uint)_randomGenerator.Next(0, 256), (uint)_randomGenerator.Next(0, 256), null);
+    // Prints a message to the skill's log file
+    _misty.SkillLogger.LogVerbose($"Change LED called after heartbeat callback");
+}
+</code></pre>
+<h2 id="data-handling">Data Handling<a class="header-permalinks" href="#data-handling"><i class="ion-link"></i></a></h2><p>Most of the skills you write for Misty require you to determine how Misty should react to information she gathers from her sensors and from third-party APIs. The topics in this section describe techniques you can use to can access, filter, and validate sensor and event data in your skill code, using examples from the <a href="/misty-ii/dotnet-sdk/sample-project/#interactivemistyskill"><code>InteractiveMistySkill</code></a> and <a href="/misty-ii/dotnet-sdk/sample-project/#forcedriving"><code>ForceDriving</code></a> sample skills.</p>
+<h3 id="registering-amp-unregistering-events">Registering &amp; Unregistering Events<a class="header-permalinks" href="#registering-amp-unregistering-events"><i class="ion-link"></i></a></h3><p>You can create a listener for event messages by issuing a command to register for a specific event type. In most cases, commands for registering event listeners can take the following arguments:</p>
+<ul>
+<li><code>eventCallback</code> - The callback the skill triggers when it receives a message from the associated event type.</li>
+<li><code>debounce</code> - How long (in milliseconds) to pause between event messages. Setting this to a value other than <code>0</code> can cause you to miss messages.</li>
+<li><code>keepAlive</code> - If <code>false</code>, the skill unregisters the event after the first event message is received, thus triggering the callback function only once.</li>
+<li><code>validations</code> -  An optional list of validations to apply to your event listener. Validations allow you to filter out unwanted event messages. <a href="./#validating-event-data">Read more about validations below</a>.</li>
+<li><code>eventName</code> - An optional name for this event listener. Giving an event listener a specific name allows you to unregister that specific event listener elsewhere in your skill.</li>
+<li><code>commandCallback</code> - An optional callback function to invoke when the robot sends a message to your skill acknowledging it has received the command. This acknowledgement message is sent separately from event message data.</li>
+</ul>
+<p>The following example from the <code>InteractiveMistySkill</code> shows the command we use to register for messages from Misty's capacitive touch sensors. When the skill gets a capacitive touch event message, it passes that data into the <code>CapTouchCallback()</code> method. We set the <code>debounce</code> to be <code>true</code>, so that the skill continues to listen for messages until we unregister this event.</p>
+<pre><code class="lang-csharp">// Registers for event messages from Misty's capacitive touch sensors.
+_misty.RegisterCapTouchEvent(CapTouchCallback, 0, true, null, null, null);
+</code></pre>
+<p>When a cap touch event is triggered, the event message is passed into the <code>CapTouchCallback()</code>, shown here:</p>
+<pre><code class="lang-csharp">private void CapTouchCallback(ICapTouchEvent capTouchEvent)
+{
+    if(capTouchEvent.IsContacted)
+    {
+        switch (capTouchEvent.SensorPosition)
+        {
+            case CapTouchPosition.Back:
+                _misty.PlayAudio("s_Love.wav", 100, null);
+                _misty.DisplayImage("e_Love.jpg", 1 , null);
+                break;
+            case CapTouchPosition.Front:
+                _misty.PlayAudio("s_Amazement.wav", 100, null);
+                _misty.DisplayImage("e_Amazement.jpg", 1, null);
+                break;
+            case CapTouchPosition.Right:
+                _misty.PlayAudio("Joy.wav", 100, null);
+                _misty.DisplayImage("JoyGoofy3.jpg", 1, null);
+                break;
+            case CapTouchPosition.Left:
+                _misty.PlayAudio("e_Terror.jpg", 100, null);
+                _misty.DisplayImage("s_Fear.wav", 1, null);
+                break;
+            case CapTouchPosition.Scruff:
+                _misty.PlayAudio("s_Rage.wav", 100, null);
+                _misty.DisplayImage("e_Rage4.jpg", 1, null);
+                break;
+            case CapTouchPosition.Chin:
+                _misty.PlayAudio("s_Sleepy.wav", 100, null);
+                _misty.DisplayImage("e_Sleepy2.jpg", 1, null);
+                break;
+        }
+    }
+}
+</code></pre>
+<p>When you want to unregister all of the event listeners in a skill, you can call the <code>UnregisterAllEvents()</code> command as follows:</p>
+<pre><code class="lang-csharp">// Unregisters all events
+_misty.UnregisterAllEvents(UnregisterCallback);
+</code></pre>
+<p>Unregistering events also triggers a callback you define in your skill code (in this case, <code>UnregisterCallback()</code>):</p>
+<pre><code class="lang-csharp">private void UnregisterCallback(IRobotCommandResponse response)
+{
+     // Writes a message to the skill's log file.
+    _misty.SkillLogger.Log($"InteractiveMistySkill : UnregisterCallback called");
+}
+</code></pre>
+<p>In addition to registering generalized event listeners, you can also assign event listeners unique names. This allows you to create multiple listeners for the same type of event message, and it gives you the option to unregister specific event listeners while leaving others active. Using this technique to register a bump sensor event called <code>MyBumpSensorName</code> would look like this:</p>
+<pre><code class="lang-csharp">//Create an event with a specific name so we can unregister it when
+// needed using that name
+_misty.RegisterBumpSensorEvent(BumpCallback, 0, true, null, "MyBumpSensorName", null);
+</code></pre>
+<p>Unregistering the <code>MyBumpSensorName</code> event listener would look like this. (Note that this also triggers our <code>UnregisterCallback()</code> function.)</p>
+<pre><code class="lang-csharp">//Unregister the bump sensor
+_misty.UnregisterEvent("MyBumpSensorName", UnregisterCallback);
+</code></pre>
+<p>As an alternative to the above techniques, you can register events without specifying a callback function. When you do this, you must use the following pattern:</p>
+<pre><code class="lang-csharp">// Registers for bump event without a callback
+_misty.RegisterBumpSensorEvent(0, true, null, null, null);
+// Attach ProcessBumpEvent method to BumpSensorEventReceived events.
+_misty.BumpSensorEventReceived += ProcessBumpEvent;
+</code></pre>
+<p>When you use this technique, the event handler (for bump sensor events, <code>ProcessBumpEvent</code>) is attached to the <code>BumpSensorEventReceived</code> event. In the <code>InteractiveMistySkill</code> sample, the <code>ProcessBumpEvent</code> is defined as follows:</p>
+<pre><code class="lang-csharp">private void ProcessBumpEvent(object sender, IBumpSensorEvent bumpEvent)
+{
+    if (!bumpEvent.IsContacted)
+    {
+        _misty.Stop(null);
+        switch (bumpEvent.SensorPosition)
+        {
+            case BumpSensorPosition.FrontRight:
+                _misty.PlayAudio("s_PhraseHello.wav", 100, null);
+                break;
+            case BumpSensorPosition.FrontLeft:
+                _misty.PlayAudio("s_PhraseUhOh.wav", 100, null);
+                break;
+            case BumpSensorPosition.BackRight:
+                _misty.PlayAudio("s_Love.wav", 100, null);
+                break;
+            case BumpSensorPosition.BackLeft:
+                _misty.PlayAudio("s_Boredom.wav", 100, null);
+                break;
+        }
+    }
+}
+</code></pre>
+<h3 id="validating-event-data">Validating Event Data<a class="header-permalinks" href="#validating-event-data"><i class="ion-link"></i></a></h3><p>In some cases you may find it useful to validate data from event messages before passing that data into a callback function or event handler. This is useful when you want Misty to respond to an event only when it meets specific criteria – for example, if you want Misty to play a sound when you press her front right bump sensor, but not to react when you release that sensor, and to remain silent when you interact with any of her other bump sensors.</p>
+<p>To allow for this, several of Misty's event registration commands accept an optional <code>validations</code> parameter. You can use this parameter by assigning the validations you want to check against to a validation list specific to the corresponding event type. Then, when you register for the event, you pass in this validation list for the <code>validations</code> argument.</p>
+<p>The following example from the <code>ForceDriving</code> sample skill shows how to use validations when registering for time-of-flight messages from Misty's front right time-of-flight sensor. It applies two validations to the event listener:</p>
+<ul>
+<li>the first validates that the value of <code>DistanceInMeters</code> is less than or equal to <code>0.3</code></li>
+<li>the second validates that the <code>SensorName</code> string is equal to <code>FrontRight</code></li>
+</ul>
+<pre><code class="lang-csharp">List&lt;TimeOfFlightValidation&gt; tofFrontRightValidations = new List&lt;TimeOfFlightValidation&gt;();
+tofFrontRightValidations.Add(new TimeOfFlightValidation { Name = TimeOfFlightFilter.DistanceInMeters, Comparison = ComparisonOperator.LessThanOrEqual, ComparisonValue = 0.3 });
+tofFrontRightValidations.Add(new TimeOfFlightValidation { Name = TimeOfFlightFilter.SensorName, Comparison = ComparisonOperator.Equal, ComparisonValue = TimeOfFlightPosition.FrontRight });
+_misty.RegisterTimeOfFlightEvent(TOFRangeCallback, 300, true, tofFrontRightValidations, null, null);
+</code></pre>
+<p>As a result, the registered event listener only triggers the <code>TOFRangeCallback()</code> method when the validation conditions are met.</p>
+<h2 id="skill-logging">Skill Logging<a class="header-permalinks" href="#skill-logging"><i class="ion-link"></i></a></h2><p>Misty's .NET SDK provides tools for writing messages to log files associated with a specific .NET skill. Each time you run a .NET skill, Misty creates a <code>.log</code> file with the name of the skill and a timestamp. Skill log files are stored separately from the general purpose log file, which many of the robot's systems can write to.</p>
+<p>You can write your own messages to the log file for a skill by using the <code>SkillLogger.Log()</code> method. For example:</p>
+<pre><code class="lang-csharp">// Writes a message to the skill's log file
+_misty.SkillLogger.Log($"This message appears in the log file.");
+</code></pre>
+<h3 id="accessing-skill-log-files">Accessing Skill Log Files<a class="header-permalinks" href="#accessing-skill-log-files"><i class="ion-link"></i></a></h3><p>Misty stores log files for .NET skills on her local file system. You can access this file system by <a href="/misty-ii/robot/misty-ii/#connecting-to-misty-39-s-file-system">connecting to Misty's file server</a> over your local network connection. Once connected, look for skill log files in the following directory:</p>
+<pre><code>c$/Data/Misty/SDK/Logs
+</code></pre><h2 id="file-system-access">File System Access<a class="header-permalinks" href="#file-system-access"><i class="ion-link"></i></a></h2><p>It is possible to use files stored on Misty's file system from within a .NET skill. Accessing files in the file system can be done in different ways, depending on the location of the file. In particular, files stored in Windows <em>known folders</em> must be accessed in specific ways, while files in user-created locations do not have such restrictions.</p>
+<h3 id="accessing-files-in-known-folders">Accessing Files in Known Folders<a class="header-permalinks" href="#accessing-files-in-known-folders"><i class="ion-link"></i></a></h3><p>The Window's file system uses <em>known folders</em> with specific access restrictions for security reasons. These known folders include:</p>
+<ul>
+<li>Documents</li>
+<li>Music</li>
+<li>Pictures</li>
+<li>Videos</li>
+</ul>
+<p>When using files in these known folders in your .NET skill, you must access them using the <code>Windows.Storage</code> interface. Using the <code>System.IO</code> interface results in permission denied restrictions.</p>
+<p>The following example shows how to access a <code>.json</code> file in the Documents known folder in a project created with the skill template. It assumes you created your project using the <a href="/misty-ii/dotnet-sdk/getting-started/#using-the-c-skill-template">C# skill template.</a></p>
+<p>Start by including a <code>documentsLibrary</code> line in the <code>Capabilities</code> section of the <code>Package.appxmanifest</code> file for your project:</p>
+<pre><code class="lang-xml">&lt;Capabilities&gt;
+     &lt;Capability Name="internetClient" /&gt;
+     &lt;uap:Capability Name="documentsLibrary" /&gt;
+     &lt;rescap:Capability Name="broadFileSystemAccess" /&gt;
+&lt;/Capabilities&gt;
+</code></pre>
+<p>Then, add a new <code>Extension</code> to the <code>Extensions</code> section of the <code>Package.appxmanifest</code> file to identify the file extension you wish to use. In this example, we use <code>.json</code>.</p>
+<pre><code class="lang-xml">&lt;uap:Extension Category="windows.fileTypeAssociation" Executable="Dummy.exe" EntryPoint="Dummy.app"&gt;
+     &lt;uap:FileTypeAssociation Name="filetypes"&gt;
+     &lt;uap:SupportedFileTypes&gt;
+          &lt;uap:FileType&gt;.json&lt;/uap:FileType&gt;
+     &lt;/uap:SupportedFileTypes&gt;
+     &lt;/uap:FileTypeAssociation&gt;
+&lt;/uap:Extension&gt;
+</code></pre>
+<p>Include the following reference in your skill code file:</p>
+<pre><code class="lang-csharp">using Windows.Storage:
+</code></pre>
+<p>You must use the <code>Windows.Storage</code> methods to access the file in your skill code. For example:</p>
+<pre><code class="lang-csharp">var storageLibrary = await StorageLibrary.GetLibraryAsync(KnownLibraryId.Documents);
+var storageFile = await storageLibrary.SaveFolder.GetFileAsync(filename);
+string fileData = await FileIO.ReadTextAsync(storageFile);
+</code></pre>
+<h3 id="accessing-files-in-arbitrary-locations">Accessing Files in Arbitrary Locations<a class="header-permalinks" href="#accessing-files-in-arbitrary-locations"><i class="ion-link"></i></a></h3><p>You can access files in arbitrary location (such as a user-defined folder of <code>c:\temp</code>) using either the <code>Windows.Storage</code> interface or the general <code>System.IO</code> interface. For example:</p>
+<pre><code class="lang-csharp">if (!File.Exists("c:\\temp\\testfile.txt"))
+{
+    File.WriteAllLines("testing content");
+}
+</code></pre>
+<h2 id="running-a-net-skill">Running a .NET Skill<a class="header-permalinks" href="#running-a-net-skill"><i class="ion-link"></i></a></h2><p>Once you've installed a .NET skill on Misty, you can start and stop your skill by using the Skill Runner interface, or by using a REST client like Postman to issue <a href="/misty-ii/rest-api/api-reference/#runskill"><code>RunSkill</code></a> and <a href="/misty-ii/rest-api/api-reference/#cancelskill"><code>CancelSkill</code></a> commands. Alternately, you can write your own code to issue these commands from an external device.</p>
+<p>To start a .NET skill, issue a <a href="/misty-ii/rest-api/api-reference/#runskill"><code>RunSkill</code></a> POST command with the following syntax. The value of the <code>Skill</code> key must be the GUID set in your <a href="./#nativerobotskill"><code>NativeRobotSkill</code></a> constructor. For example:</p>
+<pre><code>Endpoint: POST http://&lt;robot-ip-address&gt;/api/skills/start
+{
+    "Skill": "&lt;Skill GUID&gt;"
+}
+</code></pre><p>To stop a skill, send the <a href="/misty-ii/rest-api/api-reference/#cancelskill"><code>CancelSkill</code></a> POST command to the following endpoint, passing in the GUID for the value of the <code>Skill</code> parameter in the payload.</p>
+<pre><code>Endpoint: POST http://&lt;robot-ip-address&gt;/api/skills/cancel
+{
+    "Skill": "&lt;Skill GUID&gt;"
+}
+</code></pre><p>To stop all running skills, send the same POST command with an empty payload (no skill name specified):</p>
+<pre><code>Endpoint: POST http://&lt;robot-ip-address&gt;/api/skills/cancel
+</code></pre>
+<div class="code-samples">
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/prettify.js"></script>
+        <script src="/assets/js/lunr.min.js"></script>
+        <script src="/assets/js/docs.js"></script>
+        <script src="/assets/js/prism.js"></script>
+    </div>
+</body>
+</html>
