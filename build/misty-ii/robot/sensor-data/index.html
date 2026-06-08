@@ -15,6 +15,9 @@
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <style>
+        @media (max-width: 1244px) {
+            .docs-header { top: 0 !important; }
+        }
         @media (max-width: 768px) {
             .toggle-navigation { display: inline-block !important; }
         }
@@ -27,9 +30,9 @@
                 <a href="/" style="display:inline-block;line-height:0;">
                     <img src="/assets/images/mistyrobotics-logo.png" alt="Home" style="width:36px;height:36px;border-radius:6px;display:block;">
                 </a>
-                <a href="#" class="toggle-navigation" style="margin-left:10px;font-size:22px;color:#555;text-decoration:none;line-height:1;display:none;" aria-label="Menu">&#9776;</a>
             </div>
-            <div class="right">
+            <div class="right" style="display:flex;align-items:center;">
+                <a href="#" class="toggle-navigation" style="display:none;font-size:22px;color:#ccc;text-decoration:none;line-height:1;padding:0 12px;" aria-label="Menu">&#9776;</a>
                 <div class="search">
                     <div class="search-input-wrapper">
                         <i class="ion-search"></i>
